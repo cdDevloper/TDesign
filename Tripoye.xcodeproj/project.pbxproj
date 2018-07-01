@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAA43B5520E943280046B441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5420E943280046B441 /* AppDelegate.swift */; };
+		AAA43B5720E943280046B441 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5620E943280046B441 /* ViewController.swift */; };
+		AAA43B5A20E943280046B441 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA43B5820E943280046B441 /* Main.storyboard */; };
+		AAA43B5D20E943280046B441 /* Tripoye.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5B20E943280046B441 /* Tripoye.xcdatamodeld */; };
+		AAA43B5F20E9432A0046B441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA43B5E20E9432A0046B441 /* Assets.xcassets */; };
+		AAA43B6220E9432A0046B441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA43B6020E9432A0046B441 /* LaunchScreen.storyboard */; };
+		AAA43B6D20E9432A0046B441 /* TripoyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B6C20E9432A0046B441 /* TripoyeTests.swift */; };
+		AAA43B7820E9432A0046B441 /* TripoyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B7720E9432A0046B441 /* TripoyeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAA43B6920E9432A0046B441 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAA43B4920E943280046B441 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAA43B5020E943280046B441;
+			remoteInfo = Tripoye;
+		};
+		AAA43B7420E9432A0046B441 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAA43B4920E943280046B441 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAA43B5020E943280046B441;
+			remoteInfo = Tripoye;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAA43B5120E943280046B441 /* Tripoye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripoye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAA43B5420E943280046B441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAA43B5620E943280046B441 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAA43B5920E943280046B441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAA43B5C20E943280046B441 /* Tripoye.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tripoye.xcdatamodel; sourceTree = "<group>"; };
+		AAA43B5E20E9432A0046B441 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAA43B6120E9432A0046B441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAA43B6320E9432A0046B441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAA43B6820E9432A0046B441 /* TripoyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripoyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAA43B6C20E9432A0046B441 /* TripoyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripoyeTests.swift; sourceTree = "<group>"; };
+		AAA43B6E20E9432A0046B441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAA43B7320E9432A0046B441 /* TripoyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripoyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAA43B7720E9432A0046B441 /* TripoyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripoyeUITests.swift; sourceTree = "<group>"; };
+		AAA43B7920E9432A0046B441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAA43B4E20E943280046B441 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAA43B6520E9432A0046B441 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAA43B7020E9432A0046B441 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAA43B4820E943280046B441 = {
+			isa = PBXGroup;
+			children = (
+				AAA43B5320E943280046B441 /* Tripoye */,
+				AAA43B6B20E9432A0046B441 /* TripoyeTests */,
+				AAA43B7620E9432A0046B441 /* TripoyeUITests */,
+				AAA43B5220E943280046B441 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAA43B5220E943280046B441 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAA43B5120E943280046B441 /* Tripoye.app */,
+				AAA43B6820E9432A0046B441 /* TripoyeTests.xctest */,
+				AAA43B7320E9432A0046B441 /* TripoyeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAA43B5320E943280046B441 /* Tripoye */ = {
+			isa = PBXGroup;
+			children = (
+				AAA43B8520E948410046B441 /* Model */,
+				AAA43B8620E9484F0046B441 /* View */,
+				AAA43B8720E9485D0046B441 /* Controller */,
+				AAA43B5420E943280046B441 /* AppDelegate.swift */,
+				AAA43B5820E943280046B441 /* Main.storyboard */,
+				AAA43B5E20E9432A0046B441 /* Assets.xcassets */,
+				AAA43B6020E9432A0046B441 /* LaunchScreen.storyboard */,
+				AAA43B6320E9432A0046B441 /* Info.plist */,
+				AAA43B5B20E943280046B441 /* Tripoye.xcdatamodeld */,
+			);
+			path = Tripoye;
+			sourceTree = "<group>";
+		};
+		AAA43B6B20E9432A0046B441 /* TripoyeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAA43B6C20E9432A0046B441 /* TripoyeTests.swift */,
+				AAA43B6E20E9432A0046B441 /* Info.plist */,
+			);
+			path = TripoyeTests;
+			sourceTree = "<group>";
+		};
+		AAA43B7620E9432A0046B441 /* TripoyeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAA43B7720E9432A0046B441 /* TripoyeUITests.swift */,
+				AAA43B7920E9432A0046B441 /* Info.plist */,
+			);
+			path = TripoyeUITests;
+			sourceTree = "<group>";
+		};
+		AAA43B8520E948410046B441 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AAA43B8620E9484F0046B441 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AAA43B8720E9485D0046B441 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AAA43B5620E943280046B441 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAA43B5020E943280046B441 /* Tripoye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAA43B7C20E9432A0046B441 /* Build configuration list for PBXNativeTarget "Tripoye" */;
+			buildPhases = (
+				AAA43B4D20E943280046B441 /* Sources */,
+				AAA43B4E20E943280046B441 /* Frameworks */,
+				AAA43B4F20E943280046B441 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tripoye;
+			productName = Tripoye;
+			productReference = AAA43B5120E943280046B441 /* Tripoye.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAA43B6720E9432A0046B441 /* TripoyeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAA43B7F20E9432A0046B441 /* Build configuration list for PBXNativeTarget "TripoyeTests" */;
+			buildPhases = (
+				AAA43B6420E9432A0046B441 /* Sources */,
+				AAA43B6520E9432A0046B441 /* Frameworks */,
+				AAA43B6620E9432A0046B441 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAA43B6A20E9432A0046B441 /* PBXTargetDependency */,
+			);
+			name = TripoyeTests;
+			productName = TripoyeTests;
+			productReference = AAA43B6820E9432A0046B441 /* TripoyeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAA43B7220E9432A0046B441 /* TripoyeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAA43B8220E9432A0046B441 /* Build configuration list for PBXNativeTarget "TripoyeUITests" */;
+			buildPhases = (
+				AAA43B6F20E9432A0046B441 /* Sources */,
+				AAA43B7020E9432A0046B441 /* Frameworks */,
+				AAA43B7120E9432A0046B441 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAA43B7520E9432A0046B441 /* PBXTargetDependency */,
+			);
+			name = TripoyeUITests;
+			productName = TripoyeUITests;
+			productReference = AAA43B7320E9432A0046B441 /* TripoyeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAA43B4920E943280046B441 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Chaitanya Patil";
+				TargetAttributes = {
+					AAA43B5020E943280046B441 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					AAA43B6720E9432A0046B441 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = AAA43B5020E943280046B441;
+					};
+					AAA43B7220E9432A0046B441 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = AAA43B5020E943280046B441;
+					};
+				};
+			};
+			buildConfigurationList = AAA43B4C20E943280046B441 /* Build configuration list for PBXProject "Tripoye" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAA43B4820E943280046B441;
+			productRefGroup = AAA43B5220E943280046B441 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAA43B5020E943280046B441 /* Tripoye */,
+				AAA43B6720E9432A0046B441 /* TripoyeTests */,
+				AAA43B7220E9432A0046B441 /* TripoyeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAA43B4F20E943280046B441 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAA43B6220E9432A0046B441 /* LaunchScreen.storyboard in Resources */,
+				AAA43B5F20E9432A0046B441 /* Assets.xcassets in Resources */,
+				AAA43B5A20E943280046B441 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAA43B6620E9432A0046B441 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAA43B7120E9432A0046B441 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAA43B4D20E943280046B441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAA43B5720E943280046B441 /* ViewController.swift in Sources */,
+				AAA43B5D20E943280046B441 /* Tripoye.xcdatamodeld in Sources */,
+				AAA43B5520E943280046B441 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAA43B6420E9432A0046B441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAA43B6D20E9432A0046B441 /* TripoyeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAA43B6F20E9432A0046B441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAA43B7820E9432A0046B441 /* TripoyeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAA43B6A20E9432A0046B441 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAA43B5020E943280046B441 /* Tripoye */;
+			targetProxy = AAA43B6920E9432A0046B441 /* PBXContainerItemProxy */;
+		};
+		AAA43B7520E9432A0046B441 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAA43B5020E943280046B441 /* Tripoye */;
+			targetProxy = AAA43B7420E9432A0046B441 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAA43B5820E943280046B441 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAA43B5920E943280046B441 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAA43B6020E9432A0046B441 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAA43B6120E9432A0046B441 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAA43B7A20E9432A0046B441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAA43B7B20E9432A0046B441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAA43B7D20E9432A0046B441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tripoye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdDevloper.Tripoye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAA43B7E20E9432A0046B441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tripoye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdDevloper.Tripoye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAA43B8020E9432A0046B441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TripoyeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdDevloper.TripoyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tripoye.app/Tripoye";
+			};
+			name = Debug;
+		};
+		AAA43B8120E9432A0046B441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TripoyeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdDevloper.TripoyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tripoye.app/Tripoye";
+			};
+			name = Release;
+		};
+		AAA43B8320E9432A0046B441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TripoyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdDevloper.TripoyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tripoye;
+			};
+			name = Debug;
+		};
+		AAA43B8420E9432A0046B441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TripoyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdDevloper.TripoyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tripoye;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAA43B4C20E943280046B441 /* Build configuration list for PBXProject "Tripoye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAA43B7A20E9432A0046B441 /* Debug */,
+				AAA43B7B20E9432A0046B441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAA43B7C20E9432A0046B441 /* Build configuration list for PBXNativeTarget "Tripoye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAA43B7D20E9432A0046B441 /* Debug */,
+				AAA43B7E20E9432A0046B441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAA43B7F20E9432A0046B441 /* Build configuration list for PBXNativeTarget "TripoyeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAA43B8020E9432A0046B441 /* Debug */,
+				AAA43B8120E9432A0046B441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAA43B8220E9432A0046B441 /* Build configuration list for PBXNativeTarget "TripoyeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAA43B8320E9432A0046B441 /* Debug */,
+				AAA43B8420E9432A0046B441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AAA43B5B20E943280046B441 /* Tripoye.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AAA43B5C20E943280046B441 /* Tripoye.xcdatamodel */,
+			);
+			currentVersion = AAA43B5C20E943280046B441 /* Tripoye.xcdatamodel */;
+			path = Tripoye.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AAA43B4920E943280046B441 /* Project object */;
+}
