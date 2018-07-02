@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA907FAA20EAA4D40045EF92 /* ImageSlideshowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA220EAA4D30045EF92 /* ImageSlideshowItem.swift */; };
+		AA907FAB20EAA4D40045EF92 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA320EAA4D30045EF92 /* UIImageView+Tools.swift */; };
+		AA907FAC20EAA4D40045EF92 /* ZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA420EAA4D30045EF92 /* ZoomAnimatedTransitioning.swift */; };
+		AA907FAD20EAA4D40045EF92 /* ImageSlideshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA520EAA4D30045EF92 /* ImageSlideshow.swift */; };
+		AA907FAE20EAA4D40045EF92 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA620EAA4D40045EF92 /* ActivityIndicator.swift */; };
+		AA907FAF20EAA4D40045EF92 /* UIImage+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA720EAA4D40045EF92 /* UIImage+AspectFit.swift */; };
+		AA907FB020EAA4D40045EF92 /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA820EAA4D40045EF92 /* InputSource.swift */; };
+		AA907FB120EAA4D40045EF92 /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA920EAA4D40045EF92 /* FullScreenSlideshowViewController.swift */; };
+		AA907FB520EAAA3F0045EF92 /* ViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */; };
 		AAA43B5520E943280046B441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5420E943280046B441 /* AppDelegate.swift */; };
-		AAA43B5720E943280046B441 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5620E943280046B441 /* ViewController.swift */; };
+		AAA43B5720E943280046B441 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5620E943280046B441 /* LoginViewController.swift */; };
 		AAA43B5A20E943280046B441 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA43B5820E943280046B441 /* Main.storyboard */; };
 		AAA43B5D20E943280046B441 /* Tripoye.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5B20E943280046B441 /* Tripoye.xcdatamodeld */; };
 		AAA43B5F20E9432A0046B441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA43B5E20E9432A0046B441 /* Assets.xcassets */; };
@@ -35,9 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA907FA220EAA4D30045EF92 /* ImageSlideshowItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSlideshowItem.swift; sourceTree = "<group>"; };
+		AA907FA320EAA4D30045EF92 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Tools.swift"; sourceTree = "<group>"; };
+		AA907FA420EAA4D30045EF92 /* ZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		AA907FA520EAA4D30045EF92 /* ImageSlideshow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSlideshow.swift; sourceTree = "<group>"; };
+		AA907FA620EAA4D40045EF92 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		AA907FA720EAA4D40045EF92 /* UIImage+AspectFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+AspectFit.swift"; sourceTree = "<group>"; };
+		AA907FA820EAA4D40045EF92 /* InputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSource.swift; sourceTree = "<group>"; };
+		AA907FA920EAA4D40045EF92 /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
+		AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_Extension.swift; path = Tripoye/Controller/ViewController_Extension.swift; sourceTree = SOURCE_ROOT; };
 		AAA43B5120E943280046B441 /* Tripoye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripoye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA43B5420E943280046B441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAA43B5620E943280046B441 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAA43B5620E943280046B441 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AAA43B5920E943280046B441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAA43B5C20E943280046B441 /* Tripoye.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tripoye.xcdatamodel; sourceTree = "<group>"; };
 		AAA43B5E20E9432A0046B441 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +94,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA907F9020EA9E8C0045EF92 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				AA907F9120EAA44E0045EF92 /* ImageSlideView */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		AA907F9120EAA44E0045EF92 /* ImageSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				AA907FA620EAA4D40045EF92 /* ActivityIndicator.swift */,
+				AA907FA920EAA4D40045EF92 /* FullScreenSlideshowViewController.swift */,
+				AA907FA520EAA4D30045EF92 /* ImageSlideshow.swift */,
+				AA907FA220EAA4D30045EF92 /* ImageSlideshowItem.swift */,
+				AA907FA820EAA4D40045EF92 /* InputSource.swift */,
+				AA907FA720EAA4D40045EF92 /* UIImage+AspectFit.swift */,
+				AA907FA320EAA4D30045EF92 /* UIImageView+Tools.swift */,
+				AA907FA420EAA4D30045EF92 /* ZoomAnimatedTransitioning.swift */,
+			);
+			path = ImageSlideView;
+			sourceTree = "<group>";
+		};
+		AA907FB220EAAA120045EF92 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AAA43B5620E943280046B441 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AA907FB320EAAA270045EF92 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		AAA43B4820E943280046B441 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +159,7 @@
 				AAA43B8520E948410046B441 /* Model */,
 				AAA43B8620E9484F0046B441 /* View */,
 				AAA43B8720E9485D0046B441 /* Controller */,
+				AA907F9020EA9E8C0045EF92 /* ThirdParty */,
 				AAA43B5420E943280046B441 /* AppDelegate.swift */,
 				AAA43B5820E943280046B441 /* Main.storyboard */,
 				AAA43B5E20E9432A0046B441 /* Assets.xcassets */,
@@ -147,7 +205,8 @@
 		AAA43B8720E9485D0046B441 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AAA43B5620E943280046B441 /* ViewController.swift */,
+				AA907FB320EAAA270045EF92 /* Extension */,
+				AA907FB220EAAA120045EF92 /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,9 +342,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAA43B5720E943280046B441 /* ViewController.swift in Sources */,
+				AAA43B5720E943280046B441 /* LoginViewController.swift in Sources */,
 				AAA43B5D20E943280046B441 /* Tripoye.xcdatamodeld in Sources */,
+				AA907FAD20EAA4D40045EF92 /* ImageSlideshow.swift in Sources */,
+				AA907FAF20EAA4D40045EF92 /* UIImage+AspectFit.swift in Sources */,
+				AA907FAB20EAA4D40045EF92 /* UIImageView+Tools.swift in Sources */,
+				AA907FB020EAA4D40045EF92 /* InputSource.swift in Sources */,
+				AA907FAE20EAA4D40045EF92 /* ActivityIndicator.swift in Sources */,
 				AAA43B5520E943280046B441 /* AppDelegate.swift in Sources */,
+				AA907FB520EAAA3F0045EF92 /* ViewController_Extension.swift in Sources */,
+				AA907FAA20EAA4D40045EF92 /* ImageSlideshowItem.swift in Sources */,
+				AA907FAC20EAA4D40045EF92 /* ZoomAnimatedTransitioning.swift in Sources */,
+				AA907FB120EAA4D40045EF92 /* FullScreenSlideshowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tripoye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +546,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tripoye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,43 +10,70 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tripoye" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Tripoye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BW-78-bhK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
-                                <color key="backgroundColor" red="1" green="0.29474383008856042" blue="0.36597771489125552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BW-78-bhK" customClass="ImageSlideshow" customModule="Tripoye" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="439"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0l-YY-4TY">
+                                <rect key="frame" x="326" y="32" width="38" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="SKIP">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSkipPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpX-vj-TVi"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQd-ps-BRT">
-                                <rect key="frame" x="15" y="465" width="345" height="50"/>
+                                <rect key="frame" x="15" y="454" width="345" height="50"/>
                                 <color key="backgroundColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="SZn-uR-xez"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="Connect with Facebook">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnFBPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4n-hE-sJr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlB-Ca-fdH">
-                                <rect key="frame" x="15" y="535" width="345" height="50"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="15" y="524" width="345" height="50"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="77q-C0-7ME"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="KaM-o1-cjn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="Connect with Google">
                                     <color key="titleColor" red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnGooglePress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbO-4K-xdB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGa-Tf-ZOU">
-                                <rect key="frame" x="20" y="465" width="43" height="50"/>
+                                <rect key="frame" x="20" y="454" width="43" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="43" id="w4C-ae-mCS"/>
                                 </constraints>
@@ -55,13 +82,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="lWE-a3-MR8">
-                                <rect key="frame" x="30" y="535" width="29" height="50"/>
+                                <rect key="frame" x="30" y="524" width="29" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="29" id="D1R-A4-5pj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't worry, we won't post anything on your behalf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpg-J8-Ujb">
-                                <rect key="frame" x="15" y="593" width="345" height="14"/>
+                                <rect key="frame" x="15" y="589" width="345" height="14"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -76,6 +103,20 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnLogInPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2LF-0g-tlI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJv-h2-4Ye">
                                 <rect key="frame" x="188" y="617" width="187" height="50"/>
@@ -83,27 +124,54 @@
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" red="0.8666666666666667" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSignupPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OWs-UN-nXB"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6b-oI-6N5">
+                                <rect key="frame" x="188" y="617" width="1" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="Uy6-on-Ztm"/>
+                                    <constraint firstAttribute="height" constant="50" id="XBD-yk-dgh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1BW-78-bhK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7PM-xP-b3z"/>
                             <constraint firstItem="WlB-Ca-fdH" firstAttribute="top" secondItem="OQd-ps-BRT" secondAttribute="bottom" constant="20" id="7S8-eM-1B1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WlB-Ca-fdH" secondAttribute="trailing" constant="15" id="9FK-ZM-06A"/>
-                            <constraint firstItem="xJv-h2-4Ye" firstAttribute="top" secondItem="fpg-J8-Ujb" secondAttribute="bottom" constant="10" id="AJC-qg-Opm"/>
-                            <constraint firstItem="fpg-J8-Ujb" firstAttribute="top" secondItem="WlB-Ca-fdH" secondAttribute="bottom" constant="8" id="E4A-4g-3Lj"/>
+                            <constraint firstItem="xJv-h2-4Ye" firstAttribute="top" secondItem="fpg-J8-Ujb" secondAttribute="bottom" constant="14" id="AJC-qg-Opm"/>
+                            <constraint firstItem="B6b-oI-6N5" firstAttribute="top" secondItem="Xjy-Gg-ixX" secondAttribute="top" id="BjV-41-lzR"/>
+                            <constraint firstItem="fpg-J8-Ujb" firstAttribute="top" secondItem="WlB-Ca-fdH" secondAttribute="bottom" constant="15" id="E4A-4g-3Lj"/>
                             <constraint firstItem="xJv-h2-4Ye" firstAttribute="height" secondItem="Xjy-Gg-ixX" secondAttribute="height" id="Fzr-YR-PZP"/>
                             <constraint firstItem="1BW-78-bhK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LKi-Kt-8sQ"/>
                             <constraint firstItem="WlB-Ca-fdH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="MKq-9E-Y10"/>
                             <constraint firstItem="xJv-h2-4Ye" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MLp-KU-OQT"/>
                             <constraint firstItem="xJv-h2-4Ye" firstAttribute="width" secondItem="Xjy-Gg-ixX" secondAttribute="width" id="S8O-89-ucb"/>
+                            <constraint firstItem="B6b-oI-6N5" firstAttribute="leading" secondItem="Xjy-Gg-ixX" secondAttribute="trailing" constant="1" id="Tmc-4K-OPG"/>
                             <constraint firstItem="EGa-Tf-ZOU" firstAttribute="leading" secondItem="OQd-ps-BRT" secondAttribute="leading" constant="5" id="U5n-XY-gv0"/>
+                            <constraint firstItem="o0l-YY-4TY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="VaL-JP-eGU"/>
                             <constraint firstItem="1BW-78-bhK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WVZ-K1-Z0r"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EGa-Tf-ZOU" secondAttribute="trailing" constant="20" symbolic="YES" id="Wis-xy-yAQ"/>
                             <constraint firstItem="Xjy-Gg-ixX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ylj-Wv-K86"/>
                             <constraint firstItem="EGa-Tf-ZOU" firstAttribute="bottom" secondItem="OQd-ps-BRT" secondAttribute="bottom" id="ZFn-gw-QfN"/>
-                            <constraint firstItem="Xjy-Gg-ixX" firstAttribute="top" secondItem="fpg-J8-Ujb" secondAttribute="bottom" constant="10" id="e3H-Hy-7gk"/>
+                            <constraint firstAttribute="bottom" secondItem="B6b-oI-6N5" secondAttribute="bottom" id="c1W-Ty-WC3"/>
+                            <constraint firstItem="Xjy-Gg-ixX" firstAttribute="top" secondItem="fpg-J8-Ujb" secondAttribute="bottom" constant="14" id="e3H-Hy-7gk"/>
                             <constraint firstItem="lWE-a3-MR8" firstAttribute="leading" secondItem="WlB-Ca-fdH" secondAttribute="leading" constant="15" id="eh5-qw-1K0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o0l-YY-4TY" secondAttribute="trailing" constant="11" id="gbg-L1-u8o"/>
                             <constraint firstItem="fpg-J8-Ujb" firstAttribute="trailing" secondItem="OQd-ps-BRT" secondAttribute="trailing" id="hhV-I3-qfM"/>
                             <constraint firstItem="EGa-Tf-ZOU" firstAttribute="top" secondItem="OQd-ps-BRT" secondAttribute="top" id="i8J-CZ-Wan"/>
                             <constraint firstItem="xJv-h2-4Ye" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iXU-ZC-kpO"/>
@@ -114,16 +182,24 @@
                             <constraint firstItem="fpg-J8-Ujb" firstAttribute="leading" secondItem="OQd-ps-BRT" secondAttribute="leading" id="ngY-Ki-bRs"/>
                             <constraint firstItem="Xjy-Gg-ixX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nsn-OE-727"/>
                             <constraint firstItem="lWE-a3-MR8" firstAttribute="bottom" secondItem="WlB-Ca-fdH" secondAttribute="bottom" id="qRI-LK-hIG"/>
+                            <constraint firstItem="o0l-YY-4TY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="sbs-gR-jUA"/>
                             <constraint firstItem="lWE-a3-MR8" firstAttribute="top" secondItem="WlB-Ca-fdH" secondAttribute="top" id="xKg-BO-lfT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OQd-ps-BRT" secondAttribute="trailing" constant="15" id="yFM-ji-n7h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="fbBtn" destination="OQd-ps-BRT" id="sdJ-VB-nKu"/>
+                        <outlet property="googleBtn" destination="WlB-Ca-fdH" id="Xo3-jw-Tp6"/>
+                        <outlet property="imageSlideView" destination="1BW-78-bhK" id="r1R-cN-Kp6"/>
+                        <outlet property="loginBtn" destination="Xjy-Gg-ixX" id="yll-os-YRX"/>
+                        <outlet property="signupBtn" destination="xJv-h2-4Ye" id="k4F-kZ-gX4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="62.518740629685162"/>
+            <point key="canvasLocation" x="-201.5625" y="-216.02112676056339"/>
         </scene>
     </scenes>
     <resources>
