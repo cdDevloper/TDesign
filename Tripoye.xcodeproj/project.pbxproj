@@ -17,7 +17,7 @@
 		AA907FB120EAA4D40045EF92 /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA920EAA4D40045EF92 /* FullScreenSlideshowViewController.swift */; };
 		AA907FB520EAAA3F0045EF92 /* ViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */; };
 		AAA43B5520E943280046B441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5420E943280046B441 /* AppDelegate.swift */; };
-		AAA43B5720E943280046B441 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5620E943280046B441 /* LoginViewController.swift */; };
+		AAA43B5720E943280046B441 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5620E943280046B441 /* IntroductionViewController.swift */; };
 		AAA43B5A20E943280046B441 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA43B5820E943280046B441 /* Main.storyboard */; };
 		AAA43B5D20E943280046B441 /* Tripoye.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5B20E943280046B441 /* Tripoye.xcdatamodeld */; };
 		AAA43B5F20E9432A0046B441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA43B5E20E9432A0046B441 /* Assets.xcassets */; };
@@ -55,7 +55,7 @@
 		AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_Extension.swift; path = Tripoye/Controller/ViewController_Extension.swift; sourceTree = SOURCE_ROOT; };
 		AAA43B5120E943280046B441 /* Tripoye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripoye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA43B5420E943280046B441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAA43B5620E943280046B441 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AAA43B5620E943280046B441 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		AAA43B5920E943280046B441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAA43B5C20E943280046B441 /* Tripoye.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tripoye.xcdatamodel; sourceTree = "<group>"; };
 		AAA43B5E20E9432A0046B441 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		AA907FB220EAAA120045EF92 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				AAA43B5620E943280046B441 /* LoginViewController.swift */,
+				AAA43B5620E943280046B441 /* IntroductionViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAA43B5720E943280046B441 /* LoginViewController.swift in Sources */,
+				AAA43B5720E943280046B441 /* IntroductionViewController.swift in Sources */,
 				AAA43B5D20E943280046B441 /* Tripoye.xcdatamodeld in Sources */,
 				AA907FAD20EAA4D40045EF92 /* ImageSlideshow.swift in Sources */,
 				AA907FAF20EAA4D40045EF92 /* UIImage+AspectFit.swift in Sources */,

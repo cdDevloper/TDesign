@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class IntroductionViewController: UIViewController {
     
     @IBOutlet var imageSlideView: ImageSlideshow!
     @IBOutlet weak var fbBtn: UIButton!
@@ -22,10 +22,14 @@ class LoginViewController: UIViewController {
         //Setup SlideView
         self.setupSlideView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
 }
 
 //MARK: Cuatum Method
-extension LoginViewController{
+extension IntroductionViewController{
     func setupSlideView(){
         imageSlideView.slideshowInterval = 5.0
         imageSlideView.pageControlPosition = PageControlPosition.insideScrollView
@@ -41,7 +45,7 @@ extension LoginViewController{
 }
 
 //MARK: IBAction Method
-extension LoginViewController{
+extension IntroductionViewController{
     
     @IBAction func btnLogInPress(_ sender: Any) {
         
