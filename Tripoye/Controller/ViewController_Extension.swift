@@ -148,7 +148,6 @@ extension UIViewController
     
 }
 
-
 extension NSMutableAttributedString
 {
     func widthOfString(usingFont font: UIFont) -> CGFloat

@@ -48,11 +48,13 @@ extension IntroductionViewController{
 extension IntroductionViewController{
     
     @IBAction func btnLogInPress(_ sender: Any) {
-        
+        let loginCntrl = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.loginViewController) as! LoginViewController
+        self.navigationController?.pushViewController(loginCntrl, animated: true)
     }
     
     @IBAction func btnSignupPress(_ sender:Any){
-        
+        let signupCntrl = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.signupViewController) as! SignupViewController
+        self.navigationController?.pushViewController(signupCntrl, animated: true)
     }
     
     @IBAction func btnFBPress(_ sender:Any){

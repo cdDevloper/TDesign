@@ -16,6 +16,10 @@
 		AA907FB020EAA4D40045EF92 /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA820EAA4D40045EF92 /* InputSource.swift */; };
 		AA907FB120EAA4D40045EF92 /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA920EAA4D40045EF92 /* FullScreenSlideshowViewController.swift */; };
 		AA907FB520EAAA3F0045EF92 /* ViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */; };
+		AA9E93CF20F68321000E5CED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93CE20F68321000E5CED /* LoginViewController.swift */; };
+		AA9E93D120F6833B000E5CED /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93D020F6833B000E5CED /* SignupViewController.swift */; };
+		AA9E93D320F68364000E5CED /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93D220F68364000E5CED /* ForgotViewController.swift */; };
+		AA9E93D620F68CC7000E5CED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93D520F68CC7000E5CED /* Constants.swift */; };
 		AAA43B5520E943280046B441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5420E943280046B441 /* AppDelegate.swift */; };
 		AAA43B5720E943280046B441 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B5620E943280046B441 /* IntroductionViewController.swift */; };
 		AAA43B5A20E943280046B441 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA43B5820E943280046B441 /* Main.storyboard */; };
@@ -53,6 +57,10 @@
 		AA907FA820EAA4D40045EF92 /* InputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSource.swift; sourceTree = "<group>"; };
 		AA907FA920EAA4D40045EF92 /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
 		AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_Extension.swift; path = Tripoye/Controller/ViewController_Extension.swift; sourceTree = SOURCE_ROOT; };
+		AA9E93CE20F68321000E5CED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AA9E93D020F6833B000E5CED /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		AA9E93D220F68364000E5CED /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		AA9E93D520F68CC7000E5CED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AAA43B5120E943280046B441 /* Tripoye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripoye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA43B5420E943280046B441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAA43B5620E943280046B441 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				AAA43B5620E943280046B441 /* IntroductionViewController.swift */,
+				AA9E93CE20F68321000E5CED /* LoginViewController.swift */,
+				AA9E93D020F6833B000E5CED /* SignupViewController.swift */,
+				AA9E93D220F68364000E5CED /* ForgotViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -131,6 +142,14 @@
 				AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		AA9E93D420F68C9C000E5CED /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AA9E93D520F68CC7000E5CED /* Constants.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		AAA43B4820E943280046B441 = {
@@ -160,6 +179,7 @@
 				AAA43B8620E9484F0046B441 /* View */,
 				AAA43B8720E9485D0046B441 /* Controller */,
 				AA907F9020EA9E8C0045EF92 /* ThirdParty */,
+				AA9E93D420F68C9C000E5CED /* Utility */,
 				AAA43B5420E943280046B441 /* AppDelegate.swift */,
 				AAA43B5820E943280046B441 /* Main.storyboard */,
 				AAA43B5E20E9432A0046B441 /* Assets.xcassets */,
@@ -349,10 +369,14 @@
 				AA907FAB20EAA4D40045EF92 /* UIImageView+Tools.swift in Sources */,
 				AA907FB020EAA4D40045EF92 /* InputSource.swift in Sources */,
 				AA907FAE20EAA4D40045EF92 /* ActivityIndicator.swift in Sources */,
+				AA9E93D620F68CC7000E5CED /* Constants.swift in Sources */,
 				AAA43B5520E943280046B441 /* AppDelegate.swift in Sources */,
+				AA9E93D320F68364000E5CED /* ForgotViewController.swift in Sources */,
+				AA9E93D120F6833B000E5CED /* SignupViewController.swift in Sources */,
 				AA907FB520EAAA3F0045EF92 /* ViewController_Extension.swift in Sources */,
 				AA907FAA20EAA4D40045EF92 /* ImageSlideshowItem.swift in Sources */,
 				AA907FAC20EAA4D40045EF92 /* ZoomAnimatedTransitioning.swift in Sources */,
+				AA9E93CF20F68321000E5CED /* LoginViewController.swift in Sources */,
 				AA907FB120EAA4D40045EF92 /* FullScreenSlideshowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
