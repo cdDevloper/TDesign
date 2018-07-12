@@ -28,6 +28,8 @@
 		AAA43B6220E9432A0046B441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA43B6020E9432A0046B441 /* LaunchScreen.storyboard */; };
 		AAA43B6D20E9432A0046B441 /* TripoyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B6C20E9432A0046B441 /* TripoyeTests.swift */; };
 		AAA43B7820E9432A0046B441 /* TripoyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B7720E9432A0046B441 /* TripoyeUITests.swift */; };
+		AAEDAF4B20F7C19F008BAA77 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEDAF4A20F7C19F008BAA77 /* CityListViewController.swift */; };
+		AAEDAF4E20F7CB21008BAA77 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEDAF4D20F7CB21008BAA77 /* CityCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		AAA43B7320E9432A0046B441 /* TripoyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripoyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA43B7720E9432A0046B441 /* TripoyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripoyeUITests.swift; sourceTree = "<group>"; };
 		AAA43B7920E9432A0046B441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAEDAF4A20F7C19F008BAA77 /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
+		AAEDAF4D20F7CB21008BAA77 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +222,7 @@
 		AAA43B8620E9484F0046B441 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AAEDAF4C20F7CAF5008BAA77 /* CityCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,10 +230,27 @@
 		AAA43B8720E9485D0046B441 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AAEDAF4920F7C0EF008BAA77 /* CityList */,
 				AA907FB320EAAA270045EF92 /* Extension */,
 				AA907FB220EAAA120045EF92 /* Login */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		AAEDAF4920F7C0EF008BAA77 /* CityList */ = {
+			isa = PBXGroup;
+			children = (
+				AAEDAF4A20F7C19F008BAA77 /* CityListViewController.swift */,
+			);
+			path = CityList;
+			sourceTree = "<group>";
+		};
+		AAEDAF4C20F7CAF5008BAA77 /* CityCell */ = {
+			isa = PBXGroup;
+			children = (
+				AAEDAF4D20F7CB21008BAA77 /* CityCell.swift */,
+			);
+			path = CityCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +398,8 @@
 				AA907FB520EAAA3F0045EF92 /* ViewController_Extension.swift in Sources */,
 				AA907FAA20EAA4D40045EF92 /* ImageSlideshowItem.swift in Sources */,
 				AA907FAC20EAA4D40045EF92 /* ZoomAnimatedTransitioning.swift in Sources */,
+				AAEDAF4E20F7CB21008BAA77 /* CityCell.swift in Sources */,
+				AAEDAF4B20F7C19F008BAA77 /* CityListViewController.swift in Sources */,
 				AA9E93CF20F68321000E5CED /* LoginViewController.swift in Sources */,
 				AA907FB120EAA4D40045EF92 /* FullScreenSlideshowViewController.swift in Sources */,
 			);
@@ -550,7 +574,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tripoye/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -559,6 +584,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cdDevloper.Tripoye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -568,7 +594,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tripoye/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -577,6 +604,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cdDevloper.Tripoye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

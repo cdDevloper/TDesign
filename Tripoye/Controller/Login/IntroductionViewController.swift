@@ -66,7 +66,8 @@ extension IntroductionViewController{
     }
     
     @IBAction func btnSkipPress(_ sender:Any){
-        
+        let cityCntrl = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.cityListViewController) as! CityListViewController
+        self.navigationController?.pushViewController(cityCntrl, animated: true)
     }
     
 }

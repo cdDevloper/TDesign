@@ -33,6 +33,18 @@ extension UIApplication {
 extension UIViewController
 {
     
+    func setNavigationBarImage(image:String){
+        let logoContainer = UIView(frame: CGRect(x: 0, y: 0, width: 270, height: 40))
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 270, height: 40))
+        
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: image)
+        imageView.image = image
+        logoContainer.addSubview(imageView)
+        navigationItem.titleView = logoContainer
+    }
+    
+    
     // MARK: UIActivityIndicatorView
     
     var activityIndicatorTag : Int { return 9999 }
@@ -106,17 +118,11 @@ extension UIViewController
         return controller
     }
     
-    
-    
-    
-    
-    
     override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         self.view.endEditing(true)
     }
-    
-    
+
     
     // MARK: navigationController :- Set Back Button
     

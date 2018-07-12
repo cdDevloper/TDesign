@@ -429,7 +429,120 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYY-QT-cwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="-699"/>
+            <point key="canvasLocation" x="1058" y="-699"/>
+        </scene>
+        <!--City List View Controller-->
+        <scene sceneID="6UY-Oj-qrX">
+            <objects>
+                <viewController storyboardIdentifier="CityListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TCC-3z-M60" customClass="CityListViewController" customModule="Tripoye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ofB-wQ-BzT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GDN-0h-oqd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="sGP-8A-DcU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l16-ve-J3R">
+                                            <rect key="frame" x="145" y="12" width="85" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="IGD-Rz-jmf"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="BAH-vJ-N67">
+                                            <rect key="frame" x="238.5" y="12" width="24" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="HMW-GL-x2W"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="l16-ve-J3R" firstAttribute="centerX" secondItem="sGP-8A-DcU" secondAttribute="centerX" id="1kz-OZ-AfI"/>
+                                        <constraint firstAttribute="bottom" secondItem="l16-ve-J3R" secondAttribute="bottom" constant="11" id="GYz-p7-p8o"/>
+                                        <constraint firstItem="l16-ve-J3R" firstAttribute="top" secondItem="sGP-8A-DcU" secondAttribute="top" constant="12" id="J2j-mj-Mmf"/>
+                                        <constraint firstItem="BAH-vJ-N67" firstAttribute="top" secondItem="sGP-8A-DcU" secondAttribute="top" constant="12" id="W4a-A6-7E9"/>
+                                        <constraint firstAttribute="bottom" secondItem="BAH-vJ-N67" secondAttribute="bottom" constant="11" id="qBo-Bj-7f0"/>
+                                        <constraint firstItem="BAH-vJ-N67" firstAttribute="leading" secondItem="l16-ve-J3R" secondAttribute="trailing" constant="8.5" id="tYq-vh-o4o"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="257" id="bfL-3e-Hf6" customClass="CityCell" customModule="Tripoye" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="257"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bfL-3e-Hf6" id="VFz-Cb-Z1D">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="256.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goa2" translatesAutoresizingMaskIntoConstraints="NO" id="3le-I8-2aZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="256.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="256.5" id="qak-Wp-NC3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfm-2i-6H4">
+                                                    <rect key="frame" x="15" y="178" width="345" height="33.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make something different" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTL-zx-RUr">
+                                                    <rect key="frame" x="15" y="216.5" width="345" height="24.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="mTL-zx-RUr" secondAttribute="bottom" constant="15.5" id="Bhk-gw-yEQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="3le-I8-2aZ" secondAttribute="trailing" id="FUI-eW-pND"/>
+                                                <constraint firstAttribute="trailing" secondItem="zfm-2i-6H4" secondAttribute="trailing" constant="15" id="Fzu-fY-hAc"/>
+                                                <constraint firstItem="3le-I8-2aZ" firstAttribute="leading" secondItem="VFz-Cb-Z1D" secondAttribute="leading" id="UVF-Pa-RoZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="3le-I8-2aZ" secondAttribute="bottom" id="Vm3-b5-8Ss"/>
+                                                <constraint firstItem="mTL-zx-RUr" firstAttribute="leading" secondItem="VFz-Cb-Z1D" secondAttribute="leading" constant="15" id="aOC-aP-cFg"/>
+                                                <constraint firstItem="mTL-zx-RUr" firstAttribute="top" secondItem="zfm-2i-6H4" secondAttribute="bottom" constant="5" id="iYV-rQ-fqq"/>
+                                                <constraint firstAttribute="trailing" secondItem="mTL-zx-RUr" secondAttribute="trailing" constant="15" id="mlI-J8-tzT"/>
+                                                <constraint firstItem="3le-I8-2aZ" firstAttribute="top" secondItem="VFz-Cb-Z1D" secondAttribute="top" id="qxL-3n-U3K"/>
+                                                <constraint firstItem="zfm-2i-6H4" firstAttribute="leading" secondItem="VFz-Cb-Z1D" secondAttribute="leading" constant="15" id="zTq-ag-YC2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cityDetailLbl" destination="mTL-zx-RUr" id="31h-00-MmX"/>
+                                            <outlet property="cityImgView" destination="3le-I8-2aZ" id="P6W-Zv-aiI"/>
+                                            <outlet property="cityNameLbl" destination="zfm-2i-6H4" id="KUc-EQ-GpG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="TCC-3z-M60" id="al8-bf-9aU"/>
+                                    <outlet property="delegate" destination="TCC-3z-M60" id="p7T-ly-jgM"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GDN-0h-oqd" firstAttribute="top" secondItem="ofB-wQ-BzT" secondAttribute="top" id="25B-5d-ffd"/>
+                            <constraint firstItem="GDN-0h-oqd" firstAttribute="leading" secondItem="WTv-LV-AkU" secondAttribute="leading" id="QdL-lm-Hgc"/>
+                            <constraint firstItem="GDN-0h-oqd" firstAttribute="trailing" secondItem="WTv-LV-AkU" secondAttribute="trailing" id="aHP-75-5sK"/>
+                            <constraint firstItem="GDN-0h-oqd" firstAttribute="bottom" secondItem="WTv-LV-AkU" secondAttribute="bottom" id="hTk-oZ-tp0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WTv-LV-AkU"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityListTbl" destination="GDN-0h-oqd" id="OKl-BJ-xZ2"/>
+                        <outlet property="cityNameLbl" destination="l16-ve-J3R" id="EMP-3j-Xep"/>
+                        <outlet property="headerView" destination="sGP-8A-DcU" id="ZwT-vE-x5N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Seu-bp-zGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="-698.5007496251875"/>
         </scene>
         <!--Forgot View Controller-->
         <scene sceneID="vF0-ir-2JM">
@@ -520,12 +633,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XfZ-8Q-piR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688.8" y="-699.40029985007504"/>
+            <point key="canvasLocation" x="1788" y="-1377"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="YCW-LU-xCz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sju-aq-Jfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SignupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YPT-PA-4sz" customClass="SignupViewController" customModule="Tripoye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bfQ-iq-j3K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -776,8 +888,9 @@
                         <outlet property="passTxtField" destination="9q1-le-TIV" id="CjA-sv-6Mn"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sju-aq-Jfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2402.4000000000001" y="-698.5007496251875"/>
+            <point key="canvasLocation" x="1788" y="-28"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uTl-iO-mWj">
@@ -799,6 +912,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="downArrow" width="24" height="24"/>
+        <image name="goa2" width="282" height="157"/>
         <image name="google" width="64" height="64"/>
         <image name="leftArrow" width="32" height="32"/>
         <image name="loginBg" width="1080" height="1350"/>
