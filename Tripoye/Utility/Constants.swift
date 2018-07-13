@@ -13,14 +13,19 @@ struct StoryboardIdentifier{
     static let signupViewController = "SignupViewController"
     static let loginViewController = "LoginViewController"
     static let cityListViewController = "CityListViewController"
+    static let searchCityViewController = "SearchCityViewController"
 }
 
 struct StringName{
     static let cityCell = "CityCell"
+    static let cityName = "cityName"
+    static let cityHeader = "cityHeader"
 }
 
 struct Image{
     static let whiteIcon = "whiteIcon"
+    static let returnArrow = "returnArrow"
+    
 }
 
 struct Color{

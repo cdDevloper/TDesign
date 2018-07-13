@@ -16,6 +16,7 @@
 		AA907FB020EAA4D40045EF92 /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA820EAA4D40045EF92 /* InputSource.swift */; };
 		AA907FB120EAA4D40045EF92 /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA920EAA4D40045EF92 /* FullScreenSlideshowViewController.swift */; };
 		AA907FB520EAAA3F0045EF92 /* ViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */; };
+		AA98685620F90E18004174A2 /* SearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA98685520F90E18004174A2 /* SearchCityViewController.swift */; };
 		AA9E93CF20F68321000E5CED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93CE20F68321000E5CED /* LoginViewController.swift */; };
 		AA9E93D120F6833B000E5CED /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93D020F6833B000E5CED /* SignupViewController.swift */; };
 		AA9E93D320F68364000E5CED /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93D220F68364000E5CED /* ForgotViewController.swift */; };
@@ -59,6 +60,7 @@
 		AA907FA820EAA4D40045EF92 /* InputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSource.swift; sourceTree = "<group>"; };
 		AA907FA920EAA4D40045EF92 /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
 		AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_Extension.swift; path = Tripoye/Controller/ViewController_Extension.swift; sourceTree = SOURCE_ROOT; };
+		AA98685520F90E18004174A2 /* SearchCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewController.swift; sourceTree = "<group>"; };
 		AA9E93CE20F68321000E5CED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA9E93D020F6833B000E5CED /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		AA9E93D220F68364000E5CED /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				AAEDAF4A20F7C19F008BAA77 /* CityListViewController.swift */,
+				AA98685520F90E18004174A2 /* SearchCityViewController.swift */,
 			);
 			path = CityList;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				AA907FB520EAAA3F0045EF92 /* ViewController_Extension.swift in Sources */,
 				AA907FAA20EAA4D40045EF92 /* ImageSlideshowItem.swift in Sources */,
 				AA907FAC20EAA4D40045EF92 /* ZoomAnimatedTransitioning.swift in Sources */,
+				AA98685620F90E18004174A2 /* SearchCityViewController.swift in Sources */,
 				AAEDAF4E20F7CB21008BAA77 /* CityCell.swift in Sources */,
 				AAEDAF4B20F7C19F008BAA77 /* CityListViewController.swift in Sources */,
 				AA9E93CF20F68321000E5CED /* LoginViewController.swift in Sources */,

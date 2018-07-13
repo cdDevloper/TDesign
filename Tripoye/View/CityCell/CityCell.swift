@@ -12,16 +12,25 @@ class CityCell: UITableViewCell {
     @IBOutlet weak var cityImgView: UIImageView!
     @IBOutlet weak var cityNameLbl: UILabel!
     @IBOutlet weak var cityDetailLbl: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
         // Configure the view for the selected state
     }
+   
     
 }
+
+class CityHeaderCell: UITableViewCell {
+    //
+    @IBOutlet weak var cityHeaderLbl: UILabel!
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        // Configure the view for the selected state
+    }
+}
+

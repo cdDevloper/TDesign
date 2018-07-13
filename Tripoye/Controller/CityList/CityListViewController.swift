@@ -16,7 +16,7 @@ class CityListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavigationBarImage(image:Image.whiteIcon)
-        
+        addHeaderViewGesture()
         // Do any additional setup after loading the view.
     }
     
@@ -26,7 +26,17 @@ class CityListViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated:true);
     }
     
+    func addHeaderViewGesture(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.selctCityTap(_:)))
+        headerView.addGestureRecognizer(tap)
+        headerView.isUserInteractionEnabled = true
+    }
     
+    // function which is triggered when handleTap is called
+    @objc func selctCityTap(_ sender: UITapGestureRecognizer) {
+        let serchCntrl = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.searchCityViewController) as! SearchCityViewController
+        self.navigationController?.pushViewController(serchCntrl, animated: true)
+    }
 }
 
 extension CityListViewController : UITableViewDelegate,UITableViewDataSource{
