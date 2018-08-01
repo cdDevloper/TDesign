@@ -14,12 +14,18 @@ struct StoryboardIdentifier{
     static let loginViewController = "LoginViewController"
     static let cityListViewController = "CityListViewController"
     static let searchCityViewController = "SearchCityViewController"
+    static let cityInfoViewController = "CityInfoViewController"
 }
 
 struct StringName{
     static let cityCell = "CityCell"
     static let cityName = "cityName"
     static let cityHeader = "cityHeader"
+    static let collHeaderCell = "CollHeaderCell"
+    static let cityInfoCell   = "CityInfoCell"
+    static let collViewCityInfoCell = "CollViewCityInfoCell"
+    static let secondCollViewCityInfoCell = "SecondCollViewCityInfoCell"
+    static let cityInfoCollHeader = "HeaderCollectionReusableView"
 }
 
 struct Image{

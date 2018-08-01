@@ -33,7 +33,8 @@ class LoginViewController: UIViewController {
 extension LoginViewController{
     
     @IBAction func btnLogInPress(_ sender: Any) {
-        
+        let cityCntrl = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.cityListViewController) as! CityListViewController
+        self.navigationController?.pushViewController(cityCntrl, animated: true)
     }
     
     @IBAction func btnSignupPress(_ sender:Any){

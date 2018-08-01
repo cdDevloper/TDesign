@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="HeaderCollectionReusableView" customModule="Tripoye" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP SELLING CATEGORIES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Oc-nQ-7cr">
+                    <rect key="frame" x="5" y="3" width="193" height="44"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwV-L6-ubK">
+                    <rect key="frame" x="302" y="3" width="58" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="1Ed-Lw-aiR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="View all">
+                        <color key="titleColor" red="0.88235294119999996" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YwV-L6-ubK" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="3" id="1ef-Lc-nyY"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="YwV-L6-ubK" secondAttribute="trailing" constant="5" id="Eb5-cu-s5j"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="YwV-L6-ubK" secondAttribute="bottom" constant="2" id="L1g-mw-v0V"/>
+                <constraint firstItem="8Oc-nQ-7cr" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="5" id="XmW-Bt-5kx"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="8Oc-nQ-7cr" secondAttribute="bottom" constant="3" id="ZLh-Bq-T6U"/>
+                <constraint firstItem="YwV-L6-ubK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Oc-nQ-7cr" secondAttribute="trailing" constant="23" id="epU-6v-mcg"/>
+                <constraint firstItem="8Oc-nQ-7cr" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="3" id="fL1-4P-0oI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <point key="canvasLocation" x="56.5" y="85"/>
+        </collectionReusableView>
+    </objects>
+</document>
