@@ -16,12 +16,10 @@
 		AA907FB020EAA4D40045EF92 /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA820EAA4D40045EF92 /* InputSource.swift */; };
 		AA907FB120EAA4D40045EF92 /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA920EAA4D40045EF92 /* FullScreenSlideshowViewController.swift */; };
 		AA907FB520EAAA3F0045EF92 /* ViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */; };
-		AA958A5320F9EE5C004AB350 /* CityInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA958A5220F9EE5C004AB350 /* CityInfoViewController.swift */; };
 		AA958A5520F9FBEC004AB350 /* CityInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA958A5420F9FBEC004AB350 /* CityInfoCollectionViewCell.swift */; };
 		AA958A5A20FA32F1004AB350 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA958A5820FA32F1004AB350 /* HeaderCollectionReusableView.swift */; };
 		AA958A5B20FA32F1004AB350 /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA958A5920FA32F1004AB350 /* HeaderCollectionReusableView.xib */; };
 		AA98685620F90E18004174A2 /* SearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA98685520F90E18004174A2 /* SearchCityViewController.swift */; };
-		AA9BCB7F2112254800DF53AD /* CollectionViewShelfLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9BCB7E2112254700DF53AD /* CollectionViewShelfLayout.swift */; };
 		AA9E93CF20F68321000E5CED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93CE20F68321000E5CED /* LoginViewController.swift */; };
 		AA9E93D120F6833B000E5CED /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93D020F6833B000E5CED /* SignupViewController.swift */; };
 		AA9E93D320F68364000E5CED /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93D220F68364000E5CED /* ForgotViewController.swift */; };
@@ -34,6 +32,8 @@
 		AAA43B6220E9432A0046B441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA43B6020E9432A0046B441 /* LaunchScreen.storyboard */; };
 		AAA43B6D20E9432A0046B441 /* TripoyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B6C20E9432A0046B441 /* TripoyeTests.swift */; };
 		AAA43B7820E9432A0046B441 /* TripoyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B7720E9432A0046B441 /* TripoyeUITests.swift */; };
+		AAECDB7021122F94005B12E7 /* CustomItemSizeDemoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECDB6F21122F93005B12E7 /* CustomItemSizeDemoCollectionViewController.swift */; };
+		AAECDB95211233CD005B12E7 /* CollectionViewShelfLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECDB93211233CD005B12E7 /* CollectionViewShelfLayout.swift */; };
 		AAEDAF4B20F7C19F008BAA77 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEDAF4A20F7C19F008BAA77 /* CityListViewController.swift */; };
 		AAEDAF4E20F7CB21008BAA77 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEDAF4D20F7CB21008BAA77 /* CityCell.swift */; };
 /* End PBXBuildFile section */
@@ -65,13 +65,10 @@
 		AA907FA820EAA4D40045EF92 /* InputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSource.swift; sourceTree = "<group>"; };
 		AA907FA920EAA4D40045EF92 /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
 		AA907FB420EAAA3F0045EF92 /* ViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_Extension.swift; path = Tripoye/Controller/ViewController_Extension.swift; sourceTree = SOURCE_ROOT; };
-		AA958A5220F9EE5C004AB350 /* CityInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInfoViewController.swift; sourceTree = "<group>"; };
 		AA958A5420F9FBEC004AB350 /* CityInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInfoCollectionViewCell.swift; sourceTree = "<group>"; };
 		AA958A5820FA32F1004AB350 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		AA958A5920FA32F1004AB350 /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		AA98685520F90E18004174A2 /* SearchCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewController.swift; sourceTree = "<group>"; };
-		AA9BCB7D2112254700DF53AD /* CollectionViewShelfLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewShelfLayout.h; sourceTree = "<group>"; };
-		AA9BCB7E2112254700DF53AD /* CollectionViewShelfLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewShelfLayout.swift; sourceTree = "<group>"; };
 		AA9E93CE20F68321000E5CED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA9E93D020F6833B000E5CED /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		AA9E93D220F68364000E5CED /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +87,9 @@
 		AAA43B7320E9432A0046B441 /* TripoyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripoyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA43B7720E9432A0046B441 /* TripoyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripoyeUITests.swift; sourceTree = "<group>"; };
 		AAA43B7920E9432A0046B441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAECDB6F21122F93005B12E7 /* CustomItemSizeDemoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomItemSizeDemoCollectionViewController.swift; sourceTree = "<group>"; };
+		AAECDB93211233CD005B12E7 /* CollectionViewShelfLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewShelfLayout.swift; sourceTree = "<group>"; };
+		AAECDB94211233CD005B12E7 /* CollectionViewShelfLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewShelfLayout.h; sourceTree = "<group>"; };
 		AAEDAF4A20F7C19F008BAA77 /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
 		AAEDAF4D20F7CB21008BAA77 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,18 +164,11 @@
 		AA958A5120F9EE24004AB350 /* CityDetail */ = {
 			isa = PBXGroup;
 			children = (
-				AA958A5220F9EE5C004AB350 /* CityInfoViewController.swift */,
+				AAECDB94211233CD005B12E7 /* CollectionViewShelfLayout.h */,
+				AAECDB93211233CD005B12E7 /* CollectionViewShelfLayout.swift */,
+				AAECDB6F21122F93005B12E7 /* CustomItemSizeDemoCollectionViewController.swift */,
 			);
 			path = CityDetail;
-			sourceTree = "<group>";
-		};
-		AA9BCB7C2112251A00DF53AD /* CollectionViewLayoutt */ = {
-			isa = PBXGroup;
-			children = (
-				AA9BCB7D2112254700DF53AD /* CollectionViewShelfLayout.h */,
-				AA9BCB7E2112254700DF53AD /* CollectionViewShelfLayout.swift */,
-			);
-			path = CollectionViewLayoutt;
 			sourceTree = "<group>";
 		};
 		AA9E93D420F68C9C000E5CED /* Utility */ = {
@@ -193,6 +186,7 @@
 				AAA43B6B20E9432A0046B441 /* TripoyeTests */,
 				AAA43B7620E9432A0046B441 /* TripoyeUITests */,
 				AAA43B5220E943280046B441 /* Products */,
+				AAECDB7C211230BE005B12E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,7 +246,6 @@
 		AAA43B8620E9484F0046B441 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AA9BCB7C2112251A00DF53AD /* CollectionViewLayoutt */,
 				AAEDAF4C20F7CAF5008BAA77 /* CityCell */,
 			);
 			path = View;
@@ -267,6 +260,13 @@
 				AA907FB220EAAA120045EF92 /* Login */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		AAECDB7C211230BE005B12E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AAEDAF4920F7C0EF008BAA77 /* CityList */ = {
@@ -421,12 +421,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAECDB7021122F94005B12E7 /* CustomItemSizeDemoCollectionViewController.swift in Sources */,
+				AAECDB95211233CD005B12E7 /* CollectionViewShelfLayout.swift in Sources */,
 				AAA43B5720E943280046B441 /* IntroductionViewController.swift in Sources */,
 				AAA43B5D20E943280046B441 /* Tripoye.xcdatamodeld in Sources */,
 				AA907FAD20EAA4D40045EF92 /* ImageSlideshow.swift in Sources */,
 				AA907FAF20EAA4D40045EF92 /* UIImage+AspectFit.swift in Sources */,
 				AA958A5520F9FBEC004AB350 /* CityInfoCollectionViewCell.swift in Sources */,
-				AA9BCB7F2112254800DF53AD /* CollectionViewShelfLayout.swift in Sources */,
 				AA907FAB20EAA4D40045EF92 /* UIImageView+Tools.swift in Sources */,
 				AA907FB020EAA4D40045EF92 /* InputSource.swift in Sources */,
 				AA907FAE20EAA4D40045EF92 /* ActivityIndicator.swift in Sources */,
@@ -435,7 +436,6 @@
 				AA9E93D320F68364000E5CED /* ForgotViewController.swift in Sources */,
 				AA9E93D120F6833B000E5CED /* SignupViewController.swift in Sources */,
 				AA958A5A20FA32F1004AB350 /* HeaderCollectionReusableView.swift in Sources */,
-				AA958A5320F9EE5C004AB350 /* CityInfoViewController.swift in Sources */,
 				AA907FB520EAAA3F0045EF92 /* ViewController_Extension.swift in Sources */,
 				AA907FAA20EAA4D40045EF92 /* ImageSlideshowItem.swift in Sources */,
 				AA907FAC20EAA4D40045EF92 /* ZoomAnimatedTransitioning.swift in Sources */,

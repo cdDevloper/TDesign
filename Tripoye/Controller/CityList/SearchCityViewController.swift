@@ -54,7 +54,10 @@ extension SearchCityViewController : UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cityInfoCntrl = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.cityInfoViewController) as! CityInfoViewController
+        //let cityInfoCntrl = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.cityInfoViewController) as! CityInfoViewController
+        
+        let cityInfoCntrl = self.storyboard?.instantiateViewController(withIdentifier: "CustomItemSizeDemoCollectionViewController") as! CustomItemSizeDemoCollectionViewController
+        
         self.navigationController?.pushViewController(cityInfoCntrl, animated: true)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
