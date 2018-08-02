@@ -17,13 +17,19 @@ class ImageCollectionViewCell: UICollectionViewCell {
 
 class CustomItemSizeDemoCollectionViewController: UIViewController, CollectionViewDelegateShelfLayout {
   @IBOutlet var headerView: ImageSlideshow!
-@IBOutlet var collectionView: UICollectionView!
+  @IBOutlet var lblTitle: UILabel!
+  @IBOutlet var collectionView: UICollectionView!
+    
+  var alamofireSource :[InputSource] = [ImageSource(imageString: "goa1")!, ImageSource(imageString: "goa2")!, ImageSource(imageString: "goa1")!, ImageSource(imageString: "goa2")!]
+    
   var imageSizes = [[CGSize]]()
   var imageCache = [[UIImage?]]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    
+    self.setupSlideView()
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
     if #available(iOS 10.0, *) {
@@ -40,13 +46,7 @@ class CustomItemSizeDemoCollectionViewController: UIViewController, CollectionVi
     
     refresh()
   }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-  
-  
+    
   @objc func refresh() {
     // Generate image size randomly with aspect ratio of 3:2 and the height is between 120 - 240 points with stepping of 20.0 points
     imageSizes = (0..<5).map({ _ in
@@ -66,11 +66,41 @@ class CustomItemSizeDemoCollectionViewController: UIViewController, CollectionVi
       collectionView?.refreshControl?.endRefreshing()
     }
   }
-  
-  
-  
 }
 
+//MARK: Cuatum Method
+extension CustomItemSizeDemoCollectionViewController{
+    func setupSlideView(){
+        headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 175)
+        headerView.slideshowInterval = 5.0
+        headerView.pageControlPosition = PageControlPosition.insideScrollView
+        headerView.pageControl.currentPageIndicatorTintColor = UIColor.gray
+        headerView.pageControl.pageIndicatorTintColor = UIColor.white
+        headerView.contentScaleMode = UIViewContentMode.scaleToFill
+        
+        if self.alamofireSource.count != 0{
+            headerView.setImageInputs(self.alamofireSource)
+        }
+        headerView.activityIndicator = DefaultActivityIndicator()
+    }
+}
+
+//MARK: IBAction Method
+extension CustomItemSizeDemoCollectionViewController{
+    @IBAction func btnBackPress(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func btnMenuPress(_ sender: Any) {
+        
+    }
+    
+    @IBAction func btnCartPress(_ sender: Any) {
+        
+    }
+}
+
+//MARK: CollectionView Delegate and DataSource Method
 extension CustomItemSizeDemoCollectionViewController:UICollectionViewDelegate,UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 5
