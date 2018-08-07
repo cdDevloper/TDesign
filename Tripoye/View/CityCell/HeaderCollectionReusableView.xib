@@ -44,6 +44,10 @@
                 <constraint firstItem="8Oc-nQ-7cr" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="3" id="fL1-4P-0oI"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="cityInfoHeaderLbl" destination="8Oc-nQ-7cr" id="HXg-iP-NDr"/>
+                <outlet property="viewAllbBtn" destination="YwV-L6-ubK" id="3Ey-dn-8aA"/>
+            </connections>
             <point key="canvasLocation" x="56.5" y="85"/>
         </collectionReusableView>
     </objects>

@@ -20,6 +20,7 @@
 		AA958A5A20FA32F1004AB350 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA958A5820FA32F1004AB350 /* HeaderCollectionReusableView.swift */; };
 		AA958A5B20FA32F1004AB350 /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA958A5920FA32F1004AB350 /* HeaderCollectionReusableView.xib */; };
 		AA98685620F90E18004174A2 /* SearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA98685520F90E18004174A2 /* SearchCityViewController.swift */; };
+		AA9B9581211A10A500D62795 /* BestViewDeailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9B9580211A10A500D62795 /* BestViewDeailController.swift */; };
 		AA9E93CF20F68321000E5CED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93CE20F68321000E5CED /* LoginViewController.swift */; };
 		AA9E93D120F6833B000E5CED /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93D020F6833B000E5CED /* SignupViewController.swift */; };
 		AA9E93D320F68364000E5CED /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E93D220F68364000E5CED /* ForgotViewController.swift */; };
@@ -69,6 +70,7 @@
 		AA958A5820FA32F1004AB350 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		AA958A5920FA32F1004AB350 /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		AA98685520F90E18004174A2 /* SearchCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewController.swift; sourceTree = "<group>"; };
+		AA9B9580211A10A500D62795 /* BestViewDeailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestViewDeailController.swift; sourceTree = "<group>"; };
 		AA9E93CE20F68321000E5CED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA9E93D020F6833B000E5CED /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		AA9E93D220F68364000E5CED /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,14 @@
 			path = CityDetail;
 			sourceTree = "<group>";
 		};
+		AA9B957F211A104500D62795 /* CityViewDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AA9B9580211A10A500D62795 /* BestViewDeailController.swift */,
+			);
+			path = CityViewDetail;
+			sourceTree = "<group>";
+		};
 		AA9E93D420F68C9C000E5CED /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +264,7 @@
 		AAA43B8720E9485D0046B441 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AA9B957F211A104500D62795 /* CityViewDetail */,
 				AA958A5120F9EE24004AB350 /* CityDetail */,
 				AAEDAF4920F7C0EF008BAA77 /* CityList */,
 				AA907FB320EAAA270045EF92 /* Extension */,
@@ -425,6 +436,7 @@
 				AAECDB95211233CD005B12E7 /* CollectionViewShelfLayout.swift in Sources */,
 				AAA43B5720E943280046B441 /* IntroductionViewController.swift in Sources */,
 				AAA43B5D20E943280046B441 /* Tripoye.xcdatamodeld in Sources */,
+				AA9B9581211A10A500D62795 /* BestViewDeailController.swift in Sources */,
 				AA907FAD20EAA4D40045EF92 /* ImageSlideshow.swift in Sources */,
 				AA907FAF20EAA4D40045EF92 /* UIImage+AspectFit.swift in Sources */,
 				AA958A5520F9FBEC004AB350 /* CityInfoCollectionViewCell.swift in Sources */,

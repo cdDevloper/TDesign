@@ -16,6 +16,12 @@ class CityCell: UITableViewCell {
     //CityInfoViewController
     @IBOutlet weak var cityInfoCollectioView: UICollectionView!
     
+    //CityViewAll
+    @IBOutlet weak var btnLike: UIButton!
+    @IBOutlet weak var btnShare: UIButton!
+    @IBOutlet weak var actualPriceLbl: UILabel!
+    @IBOutlet weak var discountPriceLbl: UILabel!
+    @IBOutlet weak var crossLineLbl: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

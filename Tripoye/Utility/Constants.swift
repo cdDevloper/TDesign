@@ -15,6 +15,7 @@ struct StoryboardIdentifier{
     static let cityListViewController = "CityListViewController"
     static let searchCityViewController = "SearchCityViewController"
     static let cityInfoViewController = "CityInfoViewController"
+    static let bestViewDeailController = "BestViewDeailController"
 }
 
 struct StringName{
@@ -26,6 +27,7 @@ struct StringName{
     static let collViewCityInfoCell = "CollViewCityInfoCell"
     static let secondCollViewCityInfoCell = "SecondCollViewCityInfoCell"
     static let cityInfoCollHeader = "HeaderCollectionReusableView"
+    static let viewallCityInfo = "viewallCityInfo"
 }
 
 struct Image{

@@ -66,6 +66,8 @@ class CustomItemSizeDemoCollectionViewController: UIViewController, CollectionVi
       collectionView?.refreshControl?.endRefreshing()
     }
   }
+    
+    
 }
 
 //MARK: Cuatum Method
@@ -82,6 +84,11 @@ extension CustomItemSizeDemoCollectionViewController{
             headerView.setImageInputs(self.alamofireSource)
         }
         headerView.activityIndicator = DefaultActivityIndicator()
+    }
+    
+    @objc func viewAllButtonPress(_ sender: UIButton!){
+        let bestViewDeailController = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.bestViewDeailController) as! BestViewDeailController
+        self.navigationController?.pushViewController(bestViewDeailController, animated: true)
     }
 }
 
@@ -111,26 +118,7 @@ extension CustomItemSizeDemoCollectionViewController:UICollectionViewDelegate,UI
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ImageCollectionViewCell
-//
-//        if imageCache[indexPath.section][indexPath.item] == nil {
-//            let size = imageSizes[indexPath.section][indexPath.item]
-//            var urlComponents = URLComponents(string: "https://dummyimage.com/3:2x\(size.height * collectionView.traitCollection.displayScale)")!
-//            urlComponents.queryItems = [ URLQueryItem(name: "text", value: "\(Int(size.width))x\(Int(size.height))")]
-//
-//            let request = URLRequest.init(url: urlComponents.url!)
-//            let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
-//                if let data = data, let image = UIImage(data: data) {
-//                    self?.imageCache[indexPath.section][indexPath.item] = image
-//                    DispatchQueue.main.async {
-//                        if let cell = collectionView.cellForItem(at: indexPath) as? ImageCollectionViewCell {
-//                            cell.imageView.image = image
-//                        }
-//                    }
-//                }
-//            })
-//            task.resume()
-//        }
+
         if indexPath.section == 0{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StringName.collViewCityInfoCell, for: indexPath) as! CityInfoCollectionViewCell
              return cell
@@ -141,30 +129,15 @@ extension CustomItemSizeDemoCollectionViewController:UICollectionViewDelegate,UI
         
        
     }
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        
-        //        switch kind {
-        //        case ShelfElementKindSectionHeader:
-        //            let cellHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderCollectionReusableView", for: indexPath) as! HeaderCollectionReusableView
-        //
-        //            return cellHeader
-        //        default:
-        //            assert(false, "Unexpected element kind")
-        //        }
         
         let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderCollectionReusableView", for: indexPath)
         if let view = view as? HeaderCollectionReusableView {
-            //            view.label.text = sections[(indexPath as NSIndexPath).section].rawValue
-            //            view.button.setTitle("See All >", for: UIControlState())
-            //            view.button.setTitleColor(UIColor.darkGray, for: UIControlState())
-            //            view.delegate = self
+          view.viewAllbBtn.addTarget(self, action: #selector(viewAllButtonPress(_:)), for: .touchUpInside)
         }
         return view
     }
-//     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        let cell = cell as! ImageCollectionViewCell
-//        cell.imageView.image = imageCache[indexPath.section][indexPath.item]
-//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         if section == 0{
@@ -185,3 +158,38 @@ extension CustomItemSizeDemoCollectionViewController:UICollectionViewDelegate,UI
         //imageSizes[indexPath.section][indexPath.item]
     }
 }
+
+
+
+
+
+
+
+
+/*
+ 
+ //     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+ //        let cell = cell as! ImageCollectionViewCell
+ //        cell.imageView.image = imageCache[indexPath.section][indexPath.item]
+ //    }
+ 
+ //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ImageCollectionViewCell
+ //
+ //        if imageCache[indexPath.section][indexPath.item] == nil {
+ //            let size = imageSizes[indexPath.section][indexPath.item]
+ //            var urlComponents = URLComponents(string: "https://dummyimage.com/3:2x\(size.height * collectionView.traitCollection.displayScale)")!
+ //            urlComponents.queryItems = [ URLQueryItem(name: "text", value: "\(Int(size.width))x\(Int(size.height))")]
+ //
+ //            let request = URLRequest.init(url: urlComponents.url!)
+ //            let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
+ //                if let data = data, let image = UIImage(data: data) {
+ //                    self?.imageCache[indexPath.section][indexPath.item] = image
+ //                    DispatchQueue.main.async {
+ //                        if let cell = collectionView.cellForItem(at: indexPath) as? ImageCollectionViewCell {
+ //                            cell.imageView.image = image
+ //                        }
+ //                    }
+ //                }
+ //            })
+ //            task.resume()
+ //        }*/

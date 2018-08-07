@@ -447,7 +447,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l16-ve-J3R">
-                                            <rect key="frame" x="117.5" y="12" width="85" height="21"/>
+                                            <rect key="frame" x="145" y="12" width="85" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="IGD-Rz-jmf"/>
                                             </constraints>
@@ -456,7 +456,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="BAH-vJ-N67">
-                                            <rect key="frame" x="211" y="12" width="24" height="21"/>
+                                            <rect key="frame" x="238.5" y="12" width="24" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="HMW-GL-x2W"/>
                                             </constraints>
@@ -473,7 +473,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="257" id="bfL-3e-Hf6" customClass="CityCell" customModule="Tripoye" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="257" id="bfL-3e-Hf6" customClass="CityCell" customModule="Tripoye" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="375" height="257"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bfL-3e-Hf6" id="VFz-Cb-Z1D">
@@ -681,7 +681,7 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cityName" id="BcR-ad-9A0" customClass="CityCell" customModule="Tripoye" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cityName" id="BcR-ad-9A0" customClass="CityCell" customModule="Tripoye" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BcR-ad-9A0" id="hq7-cH-SKC">
@@ -716,7 +716,7 @@
                                             <outlet property="cityNameLbl" destination="2LA-9u-HwO" id="d6u-BB-I7L"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cityHeader" id="x75-Tk-W3M" customClass="CityHeaderCell" customModule="Tripoye" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cityHeader" id="x75-Tk-W3M" customClass="CityHeaderCell" customModule="Tripoye" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x75-Tk-W3M" id="To6-xl-Loo">
@@ -1057,7 +1057,7 @@
                                 <rect key="frame" x="0.0" y="255" width="375" height="412"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityInfoCell" rowHeight="194" id="Pio-lo-oNn" customClass="CityCell" customModule="Tripoye" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityInfoCell" rowHeight="194" id="Pio-lo-oNn" customClass="CityCell" customModule="Tripoye" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="194"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pio-lo-oNn" id="ZmU-zL-K6V">
@@ -1215,7 +1215,7 @@
                                             <outlet property="cityInfoCollectioView" destination="SVs-8M-IrK" id="x39-Zr-wuq"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollHeaderCell" id="5fi-u4-8bj" customClass="CityHeaderCell" customModule="Tripoye" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollHeaderCell" id="5fi-u4-8bj" customClass="CityHeaderCell" customModule="Tripoye" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="222" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5fi-u4-8bj" id="J49-Uu-gLu">
@@ -1523,10 +1523,10 @@
             </objects>
             <point key="canvasLocation" x="3258.4000000000001" y="-729.08545727136436"/>
         </scene>
-        <!--View Controller-->
+        <!--Best View Deail Controller-->
         <scene sceneID="K9y-Hd-hNq">
             <objects>
-                <viewController id="9Kr-Qf-HUd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BestViewDeailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Kr-Qf-HUd" customClass="BestViewDeailController" customModule="Tripoye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SHM-Wo-Vlj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1542,6 +1542,7 @@
                                         </constraints>
                                         <state key="normal" image="leftArrow"/>
                                         <connections>
+                                            <action selector="btnBackClicked:" destination="9Kr-Qf-HUd" eventType="touchUpInside" id="FHq-QD-j34"/>
                                             <action selector="btnBackPress:" destination="efQ-Yv-ePm" eventType="touchUpInside" id="9DL-dA-cQK"/>
                                             <action selector="btnBackPress:" destination="3lc-5X-dfp" eventType="touchUpInside" id="MFE-gp-c7g"/>
                                         </connections>
@@ -1555,6 +1556,7 @@
                                         <state key="normal" image="menu"/>
                                         <connections>
                                             <action selector="btnBackPress:" destination="3lc-5X-dfp" eventType="touchUpInside" id="xPp-lI-Tc8"/>
+                                            <action selector="btnMenuCliked:" destination="9Kr-Qf-HUd" eventType="touchUpInside" id="Sd4-Sq-EUp"/>
                                             <action selector="btnMenuPress:" destination="efQ-Yv-ePm" eventType="touchUpInside" id="cH6-Nb-Jy3"/>
                                         </connections>
                                     </button>
@@ -1567,6 +1569,7 @@
                                         <state key="normal" image="cart"/>
                                         <connections>
                                             <action selector="btnBackPress:" destination="3lc-5X-dfp" eventType="touchUpInside" id="BmK-cR-n1S"/>
+                                            <action selector="btnCartClicked:" destination="9Kr-Qf-HUd" eventType="touchUpInside" id="7CS-Dc-do3"/>
                                             <action selector="btnCartPress:" destination="efQ-Yv-ePm" eventType="touchUpInside" id="pSa-pP-SfU"/>
                                         </connections>
                                     </button>
@@ -1596,7 +1599,7 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="257" id="orG-K8-xfW" customClass="CityCell" customModule="Tripoye" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="257" id="orG-K8-xfW" customClass="CityCell" customModule="Tripoye" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="257"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="orG-K8-xfW" id="tfP-nc-45F">
@@ -1650,7 +1653,7 @@
                                             <outlet property="cityImgView" destination="aPz-g0-CUN" id="GVg-dV-y0D"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell11" rowHeight="279" id="2qo-Pf-RsS" customClass="CityCell" customModule="Tripoye" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="viewallCityInfo" rowHeight="279" id="2qo-Pf-RsS" customClass="CityCell" customModule="Tripoye" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="285" width="375" height="279"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2qo-Pf-RsS" id="Bjs-KI-DCx">
@@ -1700,14 +1703,33 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnI-kc-w1Z">
+                                                    <rect key="frame" x="16" y="16" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="VpT-GF-41v"/>
+                                                        <constraint firstAttribute="height" constant="25" id="W4D-rI-3ce"/>
+                                                    </constraints>
+                                                    <state key="normal" image="dislike"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSA-2r-dfK">
+                                                    <rect key="frame" x="16" y="53" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="HCq-i4-Q3M"/>
+                                                        <constraint firstAttribute="width" constant="25" id="Qrf-Wd-1NY"/>
+                                                    </constraints>
+                                                    <state key="normal" image="share"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="UJy-eH-GRj" firstAttribute="top" secondItem="IqT-ZN-H0d" secondAttribute="bottom" constant="8" id="3fl-oj-BKq"/>
                                                 <constraint firstItem="Cdn-P0-g1A" firstAttribute="trailing" secondItem="bb4-v4-htK" secondAttribute="trailing" id="3jj-AE-OMe"/>
                                                 <constraint firstItem="BEo-XH-Iti" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Bjs-KI-DCx" secondAttribute="leading" constant="20" symbolic="YES" id="4uu-Xe-or3"/>
                                                 <constraint firstItem="iEv-73-SL5" firstAttribute="top" secondItem="UJy-eH-GRj" secondAttribute="bottom" constant="6" id="B3x-kT-lYO"/>
+                                                <constraint firstItem="VnI-kc-w1Z" firstAttribute="leading" secondItem="Bjs-KI-DCx" secondAttribute="leading" constant="16" id="ENr-Oc-iPs"/>
                                                 <constraint firstItem="IqT-ZN-H0d" firstAttribute="top" secondItem="Bjs-KI-DCx" secondAttribute="top" id="TYY-LW-V34"/>
+                                                <constraint firstItem="oSA-2r-dfK" firstAttribute="top" secondItem="VnI-kc-w1Z" secondAttribute="bottom" constant="12" id="Tqe-Ga-LIU"/>
                                                 <constraint firstItem="BEo-XH-Iti" firstAttribute="top" secondItem="bb4-v4-htK" secondAttribute="bottom" constant="3.5" id="ZNV-av-4GF"/>
+                                                <constraint firstItem="VnI-kc-w1Z" firstAttribute="top" secondItem="Bjs-KI-DCx" secondAttribute="top" constant="16" id="aao-HN-TGc"/>
                                                 <constraint firstAttribute="trailing" secondItem="IqT-ZN-H0d" secondAttribute="trailing" id="bkr-GZ-jDX"/>
                                                 <constraint firstAttribute="trailing" secondItem="bb4-v4-htK" secondAttribute="trailing" id="cHp-Br-tzF"/>
                                                 <constraint firstAttribute="trailing" secondItem="BEo-XH-Iti" secondAttribute="trailing" id="cNq-af-z6a"/>
@@ -1717,19 +1739,27 @@
                                                 <constraint firstItem="UJy-eH-GRj" firstAttribute="leading" secondItem="Bjs-KI-DCx" secondAttribute="leading" constant="10" id="pM3-tM-Yba"/>
                                                 <constraint firstItem="IqT-ZN-H0d" firstAttribute="leading" secondItem="Bjs-KI-DCx" secondAttribute="leading" id="qet-K9-lg8"/>
                                                 <constraint firstItem="iEv-73-SL5" firstAttribute="trailing" secondItem="UJy-eH-GRj" secondAttribute="trailing" id="qiB-SA-ouE"/>
+                                                <constraint firstItem="oSA-2r-dfK" firstAttribute="leading" secondItem="VnI-kc-w1Z" secondAttribute="leading" id="sYk-ef-AAd"/>
                                                 <constraint firstItem="Cdn-P0-g1A" firstAttribute="leading" secondItem="bb4-v4-htK" secondAttribute="leading" id="xvv-Uc-p0k"/>
                                                 <constraint firstItem="Cdn-P0-g1A" firstAttribute="centerY" secondItem="bb4-v4-htK" secondAttribute="centerY" id="yCf-Ml-UaD"/>
                                                 <constraint firstAttribute="bottom" secondItem="iEv-73-SL5" secondAttribute="bottom" constant="5.5" id="yMN-y9-BWs"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="actualPriceLbl" destination="bb4-v4-htK" id="JEU-SU-oyQ"/>
+                                            <outlet property="btnLike" destination="VnI-kc-w1Z" id="48x-La-Z58"/>
+                                            <outlet property="btnShare" destination="oSA-2r-dfK" id="2dB-3a-FfI"/>
+                                            <outlet property="cityDetailLbl" destination="UJy-eH-GRj" id="Zfi-ps-TPU"/>
                                             <outlet property="cityImgView" destination="IqT-ZN-H0d" id="4lC-lx-DiV"/>
+                                            <outlet property="cityNameLbl" destination="iEv-73-SL5" id="Zws-hH-79c"/>
+                                            <outlet property="crossLineLbl" destination="Cdn-P0-g1A" id="jTq-5O-RyO"/>
+                                            <outlet property="discountPriceLbl" destination="BEo-XH-Iti" id="btP-wl-KmX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="TCC-3z-M60" id="MUG-PO-oxn"/>
-                                    <outlet property="delegate" destination="TCC-3z-M60" id="Ioy-KS-sGr"/>
+                                    <outlet property="dataSource" destination="9Kr-Qf-HUd" id="kMW-CW-3Zq"/>
+                                    <outlet property="delegate" destination="9Kr-Qf-HUd" id="XTJ-5O-xUO"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -1745,10 +1775,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="chh-U6-xn6"/>
                     </view>
+                    <connections>
+                        <outlet property="viewAllTblView" destination="a93-bE-MCt" id="nVW-Qe-fok"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1h-zm-NJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3954" y="-729"/>
+            <point key="canvasLocation" x="4183" y="-801"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cua-QG-IMA">
@@ -1767,6 +1800,7 @@
     </scenes>
     <resources>
         <image name="cart" width="32" height="32"/>
+        <image name="dislike" width="32" height="32"/>
         <image name="downArrow" width="24" height="24"/>
         <image name="goa1" width="235" height="157"/>
         <image name="goa2" width="282" height="157"/>
@@ -5171,6 +5205,7 @@ F1wcXClcLFw5XD5cRlxJXE5cVlxZXGtcblxzAAAAAAAAAgEAAAAAAAAAWQAAAAAAAAAAAAAAAAAAXHU
         <image name="loginBg" width="1080" height="1350"/>
         <image name="menu" width="32" height="32"/>
         <image name="returnArrow" width="32" height="32"/>
+        <image name="share" width="32" height="32"/>
         <image name="whiteIcon" width="160" height="58"/>
     </resources>
 </document>
