@@ -47,6 +47,9 @@ class CustomItemSizeDemoCollectionViewController: UIViewController, CollectionVi
     refresh()
   }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
   @objc func refresh() {
     // Generate image size randomly with aspect ratio of 3:2 and the height is between 120 - 240 points with stepping of 20.0 points
     imageSizes = (0..<5).map({ _ in
@@ -87,8 +90,14 @@ extension CustomItemSizeDemoCollectionViewController{
     }
     
     @objc func viewAllButtonPress(_ sender: UIButton!){
-        let bestViewDeailController = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.bestViewDeailController) as! BestViewDeailController
-        self.navigationController?.pushViewController(bestViewDeailController, animated: true)
+        if sender.tag == 0{
+            let topViewDeailController = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.topViewDetailController) as! TopViewDetailController
+            self.navigationController?.pushViewController(topViewDeailController, animated: true)
+        }else{
+            let bestViewDeailController = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.bestViewDeailController) as! BestViewDeailController
+            self.navigationController?.pushViewController(bestViewDeailController, animated: true)
+        }
+        
     }
 }
 
@@ -131,9 +140,10 @@ extension CustomItemSizeDemoCollectionViewController:UICollectionViewDelegate,UI
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        
+        let inpath = (indexPath as NSIndexPath).section
         let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderCollectionReusableView", for: indexPath)
         if let view = view as? HeaderCollectionReusableView {
+          view.viewAllbBtn.tag = inpath
           view.viewAllbBtn.addTarget(self, action: #selector(viewAllButtonPress(_:)), for: .touchUpInside)
         }
         return view
@@ -158,12 +168,6 @@ extension CustomItemSizeDemoCollectionViewController:UICollectionViewDelegate,UI
         //imageSizes[indexPath.section][indexPath.item]
     }
 }
-
-
-
-
-
-
 
 
 /*

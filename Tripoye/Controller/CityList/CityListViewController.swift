@@ -48,4 +48,9 @@ extension CityListViewController : UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: StringName.cityCell) as! CityCell
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cityInfoCntrl = self.storyboard?.instantiateViewController(withIdentifier: "CustomItemSizeDemoCollectionViewController") as! CustomItemSizeDemoCollectionViewController
+        self.navigationController?.pushViewController(cityInfoCntrl, animated: true)
+    }
 }

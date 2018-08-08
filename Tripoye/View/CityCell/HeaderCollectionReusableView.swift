@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CityInfoCollectionSectionHeaderViewDelegate: class {
+    func sectionHeaderViewDidTappedButton(_ view: HeaderCollectionReusableView)
+}
+
 class HeaderCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var cityInfoHeaderLbl: UILabel!
     @IBOutlet weak var viewAllbBtn: UIButton!

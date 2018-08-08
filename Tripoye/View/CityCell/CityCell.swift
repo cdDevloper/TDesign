@@ -22,7 +22,10 @@ class CityCell: UITableViewCell {
     @IBOutlet weak var actualPriceLbl: UILabel!
     @IBOutlet weak var discountPriceLbl: UILabel!
     @IBOutlet weak var crossLineLbl: UILabel!
+    @IBOutlet weak var offerLbl: UILabel!
+    @IBOutlet weak var offerView: UIView!
     
+    @IBOutlet weak var topImageConstraint: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -16,6 +16,7 @@ struct StoryboardIdentifier{
     static let searchCityViewController = "SearchCityViewController"
     static let cityInfoViewController = "CityInfoViewController"
     static let bestViewDeailController = "BestViewDeailController"
+    static let topViewDetailController = "TopViewDetailController"
 }
 
 struct StringName{
