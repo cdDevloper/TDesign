@@ -26,19 +26,46 @@ class BestViewDeailController: UIViewController {
 }
 
 
+// Custum Method
+extension BestViewDeailController{
+    func menuOpen()
+    {
+        var menu = SlideMenu()
+        menu = self.loadSlideMenuWindowNiB()
+        menu.frame = self.view.bounds
+        menu.registerNibToTblMapMarker()
+        menu.menuTblView.reloadData()
+        self.view.addSubview(menu)
+        self.view.endEditing(true)
+        let transition: CATransition = CATransition()
+        let timeFunc : CAMediaTimingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.duration = 0.25
+        transition.timingFunction = timeFunc
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromLeft
+        menu.layer.add(transition, forKey: kCATransition)
+    }
+}
+
 // MARK: - IBAction Method
 extension BestViewDeailController{
+    func loadSlideMenuWindowNiB() -> SlideMenu {
+        let infoWindow = SlideMenu.instanceFromNib() as! SlideMenu
+        return infoWindow
+    }
+    
     @IBAction func btnCartClicked(_ sender: Any) {
         
     }
     
     @IBAction func btnMenuCliked(_ sender: Any) {
-        
+        menuOpen()
     }
     
     @IBAction func btnBackClicked(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
 }
 
  // MARK: - UITableviewDelegate and Datasource Method

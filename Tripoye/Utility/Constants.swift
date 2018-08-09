@@ -29,6 +29,12 @@ struct StringName{
     static let secondCollViewCityInfoCell = "SecondCollViewCityInfoCell"
     static let cityInfoCollHeader = "HeaderCollectionReusableView"
     static let viewallCityInfo = "viewallCityInfo"
+    static let headerMenuCell = "headerMenuCell"
+    static let menuCell = "menuCell"
+    static let headerNibName = "HeaderMenuViewCell"
+    static let slideMenuNibName = "SlideMenu"
+    static let menuNibName = "MenuTableViewCell"
+    
 }
 
 struct Image{

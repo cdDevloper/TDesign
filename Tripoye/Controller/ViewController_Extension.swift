@@ -33,6 +33,7 @@ extension UIApplication {
 extension UIViewController
 {
     
+    
     func setNavigationBarImage(image:String){
         let logoContainer = UIView(frame: CGRect(x: 0, y: 0, width: 270, height: 40))
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 270, height: 40))
