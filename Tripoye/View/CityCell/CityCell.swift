@@ -26,6 +26,15 @@ class CityCell: UITableViewCell {
     @IBOutlet weak var offerView: UIView!
     
     @IBOutlet weak var topImageConstraint: NSLayoutConstraint!
+    
+    //FAQ Cell
+    @IBOutlet var lblQuestCellBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var arrowImgView: UIImageView!
+    @IBOutlet weak var questionLbl: UILabel!
+    @IBOutlet weak var answerLbl: UILabel!
+    
+    @IBOutlet  var lblQuestionBottomToAnslblCostrint: NSLayoutConstraint!
+    @IBOutlet  var lblAnsBottomToCellCostrint: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

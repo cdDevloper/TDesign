@@ -9,22 +9,23 @@
 import Foundation
 import UIKit
 struct StoryboardIdentifier{
-    static let forgotViewController = "ForgotViewController"
-    static let signupViewController = "SignupViewController"
-    static let loginViewController = "LoginViewController"
-    static let cityListViewController = "CityListViewController"
-    static let searchCityViewController = "SearchCityViewController"
-    static let cityInfoViewController = "CityInfoViewController"
-    static let bestViewDeailController = "BestViewDeailController"
-    static let topViewDetailController = "TopViewDetailController"
+    static let forgotViewController      = "ForgotViewController"
+    static let signupViewController      = "SignupViewController"
+    static let loginViewController       = "LoginViewController"
+    static let cityListViewController    = "CityListViewController"
+    static let searchCityViewController  = "SearchCityViewController"
+    static let cityInfoViewController    = "CityInfoViewController"
+    static let bestViewDeailController   = "BestViewDeailController"
+    static let topViewDetailController   = "TopViewDetailController"
+    static let faqViewController         = "FAQViewController"
 }
 
 struct StringName{
-    static let cityCell = "CityCell"
-    static let cityName = "cityName"
-    static let cityHeader = "cityHeader"
-    static let collHeaderCell = "CollHeaderCell"
-    static let cityInfoCell   = "CityInfoCell"
+    static let cityCell           = "CityCell"
+    static let cityName           = "cityName"
+    static let cityHeader         = "cityHeader"
+    static let collHeaderCell     = "CollHeaderCell"
+    static let cityInfoCell       = "CityInfoCell"
     static let collViewCityInfoCell = "CollViewCityInfoCell"
     static let secondCollViewCityInfoCell = "SecondCollViewCityInfoCell"
     static let cityInfoCollHeader = "HeaderCollectionReusableView"
@@ -34,7 +35,7 @@ struct StringName{
     static let headerNibName = "HeaderMenuViewCell"
     static let slideMenuNibName = "SlideMenu"
     static let menuNibName = "MenuTableViewCell"
-    
+    static let faqCell = "faqCell"
 }
 
 struct Image{

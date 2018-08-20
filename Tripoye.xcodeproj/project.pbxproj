@@ -39,6 +39,7 @@
 		AAA43B6220E9432A0046B441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA43B6020E9432A0046B441 /* LaunchScreen.storyboard */; };
 		AAA43B6D20E9432A0046B441 /* TripoyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B6C20E9432A0046B441 /* TripoyeTests.swift */; };
 		AAA43B7820E9432A0046B441 /* TripoyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA43B7720E9432A0046B441 /* TripoyeUITests.swift */; };
+		AAC2A5C4212B3964007C4500 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2A5C3212B3964007C4500 /* FAQViewController.swift */; };
 		AAE8A244211B50F400035519 /* TopViewDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A243211B50F400035519 /* TopViewDetailController.swift */; };
 		AAECDB7021122F94005B12E7 /* CustomItemSizeDemoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECDB6F21122F93005B12E7 /* CustomItemSizeDemoCollectionViewController.swift */; };
 		AAECDB95211233CD005B12E7 /* CollectionViewShelfLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECDB93211233CD005B12E7 /* CollectionViewShelfLayout.swift */; };
@@ -102,6 +103,7 @@
 		AAA43B7320E9432A0046B441 /* TripoyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripoyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA43B7720E9432A0046B441 /* TripoyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripoyeUITests.swift; sourceTree = "<group>"; };
 		AAA43B7920E9432A0046B441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC2A5C3212B3964007C4500 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		AAE8A243211B50F400035519 /* TopViewDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewDetailController.swift; sourceTree = "<group>"; };
 		AAECDB6F21122F93005B12E7 /* CustomItemSizeDemoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomItemSizeDemoCollectionViewController.swift; sourceTree = "<group>"; };
 		AAECDB93211233CD005B12E7 /* CollectionViewShelfLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewShelfLayout.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 		AAA43B8720E9485D0046B441 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AAC2A5C2212B3900007C4500 /* FAQ */,
 				AA9B957F211A104500D62795 /* CityViewDetail */,
 				AA958A5120F9EE24004AB350 /* CityDetail */,
 				AAEDAF4920F7C0EF008BAA77 /* CityList */,
@@ -299,6 +302,14 @@
 				AA907FB220EAAA120045EF92 /* Login */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		AAC2A5C2212B3900007C4500 /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				AAC2A5C3212B3964007C4500 /* FAQViewController.swift */,
+			);
+			path = FAQ;
 			sourceTree = "<group>";
 		};
 		AAECDB7C211230BE005B12E7 /* Frameworks */ = {
@@ -473,6 +484,7 @@
 				AA9B9581211A10A500D62795 /* BestViewDeailController.swift in Sources */,
 				AAE8A244211B50F400035519 /* TopViewDetailController.swift in Sources */,
 				AA907FAD20EAA4D40045EF92 /* ImageSlideshow.swift in Sources */,
+				AAC2A5C4212B3964007C4500 /* FAQViewController.swift in Sources */,
 				AA907FAF20EAA4D40045EF92 /* UIImage+AspectFit.swift in Sources */,
 				AA958A5520F9FBEC004AB350 /* CityInfoCollectionViewCell.swift in Sources */,
 				AA907FAB20EAA4D40045EF92 /* UIImageView+Tools.swift in Sources */,

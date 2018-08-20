@@ -328,3 +328,20 @@ extension UIButton {
         }
     }
 }
+
+extension String {
+    func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat
+    {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil)
+        
+        return boundingBox.height
+    }
+    
+    func widthOfString(usingFont font: UIFont) -> CGFloat
+    {
+        let fontAttributes = [NSAttributedStringKey.font: font]
+        let size = self.size(withAttributes: fontAttributes)
+        return size.width
+    }
+}
