@@ -12,6 +12,7 @@ class FAQViewController: UIViewController {
     
  @IBOutlet weak var faqTblView: UITableView!
     var selectedIndex = -1
+    var arrSelectedIndex = [0,0,0,0,0,0]
     var selectedIndexpath :IndexPath?
     let arrQuestion = ["Why to book tours online?", "Booking tickets online? is it safe?", "Is there facility to pay in cash?","Why to book tours online?", "Booking tickets online? is it safe?", "Is there facility to pay in cash?"]
     
@@ -32,7 +33,10 @@ class FAQViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func btnBackClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -56,7 +60,7 @@ extension FAQViewController : UITableViewDelegate,UITableViewDataSource{
          cell.questionLbl.text = arrQuestion[indexPath.row]
          cell.answerLbl.text = arrAns[indexPath.row]
          cell.answerLbl.isHidden = true
-        if selectedIndex == indexPath.row{
+        if arrSelectedIndex[indexPath.row] == 1{
             cell.answerLbl.isHidden = false
             cell.lblQuestionBottomToAnslblCostrint.isActive = true
             cell.lblAnsBottomToCellCostrint.isActive = true
@@ -69,27 +73,32 @@ extension FAQViewController : UITableViewDelegate,UITableViewDataSource{
         }
         cell.selectionStyle = .none
         cell.layer.cornerRadius = 5
-        cell.layer.masksToBounds = true
         
         cell.layer.masksToBounds = false
-        cell.layer.shadowOffset = CGSize(width: 0, height: 0)
+        cell.layer.shadowOffset = CGSize(width: 0, height: 5)
         cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowOpacity = 0.23
+        cell.layer.shadowOpacity = 0.5
         cell.layer.shadowRadius = 2
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-         if selectedIndex != indexPath.row{
-            if selectedIndex != -1{
-                selectedIndex = -2
-                tableView.reloadRows(at: [selectedIndexpath!], with: UITableViewRowAnimation.bottom)
-            }
-            selectedIndexpath = indexPath
-            selectedIndex = indexPath.row
-            tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+        if arrSelectedIndex[indexPath.row] == 1{
+            arrSelectedIndex[indexPath.row] = 0
+        }else{
+            arrSelectedIndex[indexPath.row] = 1
         }
+        
+//         if selectedIndex != indexPath.row{
+//            if selectedIndex != -1{
+//                selectedIndex = -2
+//                tableView.reloadRows(at: [selectedIndexpath!], with: UITableViewRowAnimation.none)
+//            }
+//            selectedIndexpath = indexPath
+//            selectedIndex = indexPath.row
+            tableView.reloadData()
+        //}
       
     }
 }

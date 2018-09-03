@@ -43,6 +43,7 @@ extension BestViewDeailController{
         transition.timingFunction = timeFunc
         transition.type = kCATransitionPush
         transition.subtype = kCATransitionFromLeft
+        menu.delegate = self
         menu.layer.add(transition, forKey: kCATransition)
     }
 }
@@ -89,5 +90,45 @@ extension BestViewDeailController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+    }
+}
+
+
+extension BestViewDeailController: SlideMenuDelegate{
+    func menuSelectedWith(index: Int) {
+        switch index {
+        case SelectedMenuType.city:
+            print("city")
+        case SelectedMenuType.myFavou:
+            print("city")
+        case SelectedMenuType.myCart:
+            print("city")
+        case SelectedMenuType.myOrder:
+            print("city")
+        case SelectedMenuType.myProfile:
+            print("city")
+        case SelectedMenuType.myChat:
+            print("city")
+        case SelectedMenuType.changeCurrency:
+            print("city")
+        case SelectedMenuType.signIn:
+            print("city")
+        case SelectedMenuType.referFriend:
+            print("city")
+        case SelectedMenuType.faq:
+            let cityInfoCntrl = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.faqViewController) as! FAQViewController
+            self.navigationController?.pushViewController(cityInfoCntrl, animated: true)
+        case SelectedMenuType.helpAndSupport:
+            print("city")
+        case SelectedMenuType.terms:
+            let termConditionController = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.termConditionController) as! TermConditionController
+            self.navigationController?.pushViewController(termConditionController, animated: true)
+            
+        case SelectedMenuType.privacy:
+            let termConditionController = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.termConditionController) as! TermConditionController
+            self.navigationController?.pushViewController(termConditionController, animated: true)
+        default:
+            print("default")
+        }
     }
 }

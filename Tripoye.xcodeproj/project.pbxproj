@@ -13,6 +13,7 @@
 		AA13706E211C6D1500290055 /* HeaderMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA13706C211C6D1500290055 /* HeaderMenuViewCell.xib */; };
 		AA137071211C6D3100290055 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA13706F211C6D3100290055 /* MenuTableViewCell.swift */; };
 		AA137072211C6D3100290055 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA137070211C6D3100290055 /* MenuTableViewCell.xib */; };
+		AA39B379213DB38A0055FE6F /* TermConditionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA39B378213DB38A0055FE6F /* TermConditionController.swift */; };
 		AA907FAA20EAA4D40045EF92 /* ImageSlideshowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA220EAA4D30045EF92 /* ImageSlideshowItem.swift */; };
 		AA907FAB20EAA4D40045EF92 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA320EAA4D30045EF92 /* UIImageView+Tools.swift */; };
 		AA907FAC20EAA4D40045EF92 /* ZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA907FA420EAA4D30045EF92 /* ZoomAnimatedTransitioning.swift */; };
@@ -71,6 +72,7 @@
 		AA13706C211C6D1500290055 /* HeaderMenuViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderMenuViewCell.xib; sourceTree = "<group>"; };
 		AA13706F211C6D3100290055 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		AA137070211C6D3100290055 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		AA39B378213DB38A0055FE6F /* TermConditionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermConditionController.swift; sourceTree = "<group>"; };
 		AA907FA220EAA4D30045EF92 /* ImageSlideshowItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSlideshowItem.swift; sourceTree = "<group>"; };
 		AA907FA320EAA4D30045EF92 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Tools.swift"; sourceTree = "<group>"; };
 		AA907FA420EAA4D30045EF92 /* ZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				AAC2A5C3212B3964007C4500 /* FAQViewController.swift */,
+				AA39B378213DB38A0055FE6F /* TermConditionController.swift */,
 			);
 			path = FAQ;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				AA137071211C6D3100290055 /* MenuTableViewCell.swift in Sources */,
 				AAECDB95211233CD005B12E7 /* CollectionViewShelfLayout.swift in Sources */,
 				AAA43B5720E943280046B441 /* IntroductionViewController.swift in Sources */,
+				AA39B379213DB38A0055FE6F /* TermConditionController.swift in Sources */,
 				AAA43B5D20E943280046B441 /* Tripoye.xcdatamodeld in Sources */,
 				AA9B9581211A10A500D62795 /* BestViewDeailController.swift in Sources */,
 				AAE8A244211B50F400035519 /* TopViewDetailController.swift in Sources */,

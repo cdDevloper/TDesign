@@ -8,10 +8,33 @@
 
 import UIKit
 
+
+protocol SlideMenuDelegate{
+    func menuSelectedWith(index:Int)
+}
+
+struct SelectedMenuType {
+    static let  city:Int = 0
+    static let  myFavou = 1
+    static let  myCart = 2
+    static let  myOrder = 3
+    static let  myProfile = 4
+    static let  myChat = 5
+    static let  changeCurrency = 6
+    static let  signIn = 7
+    static let  referFriend = 8
+    static let  faq = 9
+    static let  helpAndSupport = 10
+    static let  terms = 11
+    static let  privacy = 12
+}
+
 class SlideMenu: UIView {
     
+   
    @IBOutlet var menuTblView: UITableView!
     let arrMenu = ["City","My Favourite","My Cart","My Order", "My Profile","My Chat","Change Currency","Sign In","Refer a friend", "FAQ's", "Help and Supports","Terms and Conditions","Privacy Policy"]
+    var delegate:SlideMenuDelegate!
     class func instanceFromNib() -> UIView {
         return UINib(nibName: StringName.slideMenuNibName, bundle: nil).instantiate(withOwner: self, options: nil).first as! UIView
     }
@@ -31,13 +54,6 @@ class SlideMenu: UIView {
         self.removeFromSuperview()
     }
     
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }
 
@@ -75,6 +91,10 @@ extension SlideMenu : UITableViewDataSource,UITableViewDelegate{
         let headerCell = tableView.dequeueReusableCell(withIdentifier: StringName.headerMenuCell) as! HeaderMenuViewCell
         headerView.addSubview(headerCell)
         return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.delegate.menuSelectedWith(index: indexPath.row)
     }
     
     

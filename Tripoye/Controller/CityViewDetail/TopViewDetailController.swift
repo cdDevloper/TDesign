@@ -76,8 +76,6 @@ extension TopViewDetailController: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cityInfoCntrl = self.storyboard?.instantiateViewController(withIdentifier: StoryboardIdentifier.faqViewController) as! FAQViewController
-        
-        self.navigationController?.pushViewController(cityInfoCntrl, animated: true)
+       
     }
 }

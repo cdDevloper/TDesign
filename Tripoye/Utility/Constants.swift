@@ -18,6 +18,7 @@ struct StoryboardIdentifier{
     static let bestViewDeailController   = "BestViewDeailController"
     static let topViewDetailController   = "TopViewDetailController"
     static let faqViewController         = "FAQViewController"
+    static let termConditionController   = "TermConditionController"
 }
 
 struct StringName{
